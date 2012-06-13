@@ -1,16 +1,25 @@
 title: Update
 -
-date: August 29, 2011
+date: June 13, 2012
+-
+tags: Workflow, Web Development
 -
 content: 
 
-Speaking of [Jason Santa Maria], he just updated his [website], which now looks more like mine. Except that his is still, by far, much better. It is worth pointing out that he, too, is focusing more on the written content. I like this quote regarding his redesign:
+It's been a while, but I've started to streamline this site. I'm playing around with [Bootstrap], as I'm particularly interested in its responsive properties [^1]. It was also a good excuse to play around with [Coda 2]. I'm also trying out [Git] as my codebase repository.
 
-<blockquote>
-<p>One of the biggest features this new design touts is less. Less cruft, less in the way.</p>
-</blockquote>
+Some immediate benefits:
 
-And speaking of writing, it's been a while since I've written anything. Which is perfectly fine, when you're writing to an audience of none.
+* Consistency across pages
+* Better legibility (even for mobile devices)
+* I can modify and tinker with the site in a different sandbox
 
-[Jason Santa Maria]: http://abeyang.berkmedia.org/me/articles/writing-workflow/
-[website]: http://jasonsantamaria.com/articles/five-and-ten
+You might also notice that what used to be "Projects" is now "Guides".
+
+No guarantees, but I'd like to write about some of the projects I've been working on. Stay tuned.
+
+[Bootstrap]: http://twitter.github.com/bootstrap/
+[Coda 2]: http://panic.com/coda/
+[Git]: https://github.com/
+
+[^1]: Resize the browser to see what I mean.
