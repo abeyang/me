@@ -1,0 +1,40 @@
+
+:header
+
+	<!-- MAIN -->
+
+	<div class="container offset">
+		<ul class="breadcrumb">
+			<li><a href="@root_path/guides">Guides</a> <span class="divider">/</span></li>
+			<li class="active">@title</li>
+		</ul>
+		
+		<div class="row">
+	        if $children do
+			    <ul class="nav nav-pills nav-stacked span3">
+	              foreach $children do
+	                <li><a href="@url">@title</a></li>
+	              endforeach
+	            </ul> <!-- /ul.nav-pills -->
+	            
+	        <div class="content span9">
+	        endif
+	        if !$children do
+	        <div class="content span12">
+	        endif
+	                
+	                @type | @date
+	                
+	                @content
+	                
+	                :media
+	
+	        </div>
+			
+		</div> <!-- /.row -->
+
+
+
+	</div> <!-- /.container -->
+			
+:footer

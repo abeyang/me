@@ -1,0 +1,10 @@
+title: Email Campaigns
+-
+subtitle: Interaction + Lo-fi Design
+-
+date: Feb 2009
+-
+content: 
+This was an exercise that gathered thoughts and ideas from different designers and developers of what they envision email campaigns would look like; this was my (lo-fi) design for my dream email campaign application. Entire design took me less than a week.
+-
+keywords: professional portfolio, webapp, usability design, convio, photoshop

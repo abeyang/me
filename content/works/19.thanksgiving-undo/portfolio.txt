@@ -1,0 +1,13 @@
+title: Gracepoint 2009 in Review
+-
+subtitle: Animation
+-
+date: Nov 2009
+-
+content: 
+Intro video that started Gracepoint's Thanksgiving Celebration. A look back into 2009, especially that of a <a href="/me/projects/gracepointlive-undo/">recent production</a>.
+
+Process began with blocking in the big bold letters and filling in all the items in Illustrator. Afterwards, everything is eventually ported into After Effects for animation. One week to complete from start to finish.
+-
+keywords: intro, video, post, after effects, illustrator
+

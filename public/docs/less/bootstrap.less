@@ -1,0 +1,147 @@
+/*!
+ * Bootstrap v2.0.4
+ *
+ * Copyright 2012 Twitter, Inc
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Designed and built with all the love in the world @twitter by @mdo and @fat.
+ */
+
+// CSS Reset
+@import "reset.less";
+
+// Core variables and mixins
+@import "variables.less"; // Modify this for custom colors, font-sizes, etc
+@import "mixins.less";
+
+// Grid system and page structure
+@import "scaffolding.less";
+@import "grid.less";
+@import "layouts.less";
+
+// Base CSS
+@import "type.less";
+@import "code.less";
+@import "forms.less";
+@import "tables.less";
+
+// Components: common
+@import "sprites.less";
+@import "dropdowns.less";
+@import "wells.less";
+@import "component-animations.less";
+@import "close.less";
+
+// Components: Buttons & Alerts
+@import "buttons.less";
+@import "button-groups.less";
+@import "alerts.less"; // Note: alerts share common CSS with buttons and thus have styles in buttons.less
+
+// Components: Nav
+@import "navs.less";
+@import "navbar.less";
+@import "breadcrumbs.less";
+@import "pagination.less";
+@import "pager.less";
+
+// Components: Popovers
+@import "modals.less";
+@import "tooltip.less";
+@import "popovers.less";
+
+// Components: Misc
+@import "thumbnails.less";
+@import "labels-badges.less";
+@import "progress-bars.less";
+@import "accordion.less";
+@import "carousel.less";
+@import "hero-unit.less";
+
+// Utility classes
+@import "responsive.less"; // Added in
+@import "utilities.less"; // Has to be last to override when necessary
+
+// AY styles
+
+body { 
+/* 	background: url(../img/bg/groovepaper.png) repeat;  */
+	padding-bottom: 50px;
+} 
+
+.container {
+	&.offset { margin-top: 50px;}
+}
+
+#article {
+	h3 { 
+		font-family: @serifFontFamily; 
+		text-transform: none;
+		margin: 18px 0;
+	}
+	
+	.date i { margin-top: 3px; }
+}
+
+.horizontal .next { text-align: right; }
+
+.tags {
+	font-family: @sansFontFamily;
+	font-size: 16px;
+	.opacity(25);
+}
+
+.date {
+	font-family: @sansFontFamily;
+}
+
+// UP TO LANDSCAPE PHONE
+// ---------------------
+@media (max-width: 480px) {
+
+}
+
+// LANDSCAPE PHONE TO SMALL DESKTOP & PORTRAIT TABLET
+// --------------------------------------------------
+@media (max-width: 767px) {
+
+}
+
+// PORTRAIT TABLET TO DEFAULT DESKTOP
+// ----------------------------------
+@media (min-width: 768px) and (max-width: 1199px) {
+	#articles .tags { 
+		text-align: right; 
+		padding-top: 7px;
+	}
+}
+
+// LARGE DESKTOP & UP
+// ------------------
+@media (min-width: 1200px) {
+	#articles .tags { 
+		text-align: right; 
+		padding-top: 7px;
+	}
+	
+	#article {
+		h1 { border-bottom: 1px solid #eee; }
+
+		#content {
+			width: 940px;
+			float: left;
+			.date, .tags, .horizontal { display: none; }
+		}
+		
+		#aside {
+			width: 200px;
+			margin-top: 24px;
+			float: right;
+			font-size: 16px;
+			.opacity(25);
+			
+			.tags { .opacity(100); }
+		}
+	}
+	
+}

@@ -1,0 +1,11 @@
+title: New Student Welcome Night 2008
+-
+subtitle: Website Design
+-
+date: Aug 2008
+-
+content: 
+Annual event held by affiliates of Gracepoint Berkeley: <a href="http://kairosfellowship.org/">Kairos Christian Fellowship</a>, <a href="http://koinonia.net/berkeley">Koinonia</a>, and <a href="http://acts2fellowship.org/">acts2fellowship</a>.
+-
+keywords: website
+

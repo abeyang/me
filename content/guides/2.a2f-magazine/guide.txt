@@ -1,0 +1,11 @@
+title: a2f Magazine
+-
+type: Wordpress Theme
+-
+date: Sep 2011
+-
+content: 
+New 2011 theme for [acts2fellowship Riverside (college group)]. Documentation (for developers, designers, and writers) on the sidebar; otherwise check out the [repository].
+
+[acts2fellowship Riverside (college group)]:http://www.acts2fellowship.org/riverside
+[repository]:http://code.google.com/p/a2f-magazine-wordpress-theme/

@@ -1,0 +1,44 @@
+
+:header
+
+	<!-- MAIN -->
+
+	<div class="container offset">
+		<ul class="breadcrumb">
+			<li><a href="@root_path/guides">Guides</a> <span class="divider">/</span></li>
+            foreach $parent do
+				<li><a href="@url">@title</a> <span class="divider">/</span></li>
+			endforeach
+			<li class="active">@title</li>
+		</ul>
+		
+		<div class="row">
+	        if $siblings_and_self do
+			    <ul class="nav nav-pills nav-stacked span3">
+	              foreach $siblings_and_self do
+	                <li><a href="@url">@title</a></li>
+	              endforeach
+	            </ul> <!-- /ul.nav-pills -->
+	            
+	        <div class="content span9">
+	        endif
+	        if !$siblings_and_self do
+	        <div class="content span12">
+	        endif
+	                
+		        <h1>@title</h1>
+	            
+	            <em>Last updated: @update</em>
+	            
+	            @content
+	
+	        </div>
+			
+		</div> <!-- /.row -->
+
+
+
+	</div> <!-- /.container -->
+			
+:footer
+

@@ -1,0 +1,18 @@
+title: Focus on the Goal
+-
+date: June 15, 2011
+-
+tags: Advice
+-
+content: 
+
+### I was helping a friend put together a lecture a few weeks ago. After he went through a mock run with me, I asked him, "What is the main point of your lecture? What do you want to leave your audience feeling?" After he told me what his main point was, I expressed my concern -- it was totally not what I had thought it was. Somehow, along the way, he had lost his focus.
+
+It's important to not only have a primary goal, but to keep it in mind. As a user experience designer, before I even touch the mouse or pick up a pen, I think about what the main goal is for the user in which I'll be designing. Before I create a video -- whether it's a [year-end video], an [intro video], or some other kind -- I keep the main goal in mind. The same applies to graphic design. 
+
+I can't find the exact quote, but John Lasseter has said that before they flesh out the story to a Pixar movie, they would always try to encapsulate the **emotional core** of the movie in one sentence. This is something they go back to again and again, to make sure they don't steer off-track. For Pixar, this "emotional core" is their primary goal. Sure, there are many other secondary and side goals, but unless they hit the primary -- this emotional core -- then in their own eyes, they have failed. 
+
+Why is a primary goal so important? It gives clarity and acute focus to a given project. Without it, we would be floating on aimlessly, without anything concrete to latch onto. By remembering and focusing on the goal, progress and creativity can form, because the proper boundaries have been identified. Therefore, as artists, designers, photographers, videographers -- anyone who has a voice and an audience -- let us strive towards the primary goal that is set before us.
+
+[year-end video]: http://www.acts2fellowship.org/riverside/2011/06/03/year-one/
+[intro video]: /me/projects/gracepointlive-undo/

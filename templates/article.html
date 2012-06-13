@@ -1,0 +1,46 @@
+
+:header
+
+	<!-- MAIN -->
+
+	<div id="article" class="container offset">
+		<div class="row">
+	        <h1 class="span12">@title</h1>
+			<div class="span12">
+				<div id="content">
+	                <span class="date"><i class="icon-time"></i> @date</span>
+	                <div class="tags">
+		        		if @tags do
+		        			<i class="icon-tags"></i> @tags
+		        		endif
+	        		</div>
+	                @content
+					<hr>
+					if $siblings do
+						<div class="row horizontal">
+							<div class="span6 prev">
+								:next-page
+							</div>
+							<div class="span6 next">
+								:previous-page
+							</div>
+						</div>
+					endif
+				</div> <!-- /#content -->
+				
+				<div id="aside" class="visible-superlarge">
+					<span class="date"><i class="icon-time"></i> @date</span>
+	                <div class="tags">
+		        		if @tags do
+		        			<i class="icon-tags"></i> @tags
+		        		endif
+	        		</div>
+				</div> <!-- /#aside -->
+
+			</div>
+		</div>
+
+
+	</div> <!-- /.container -->
+
+:footer

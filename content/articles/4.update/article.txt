@@ -1,0 +1,16 @@
+title: Update
+-
+date: August 29, 2011
+-
+content: 
+
+Speaking of [Jason Santa Maria], he just updated his [website], which now looks more like mine. Except that his is still, by far, much better. It is worth pointing out that he, too, is focusing more on the written content. I like this quote regarding his redesign:
+
+<blockquote>
+<p>One of the biggest features this new design touts is less. Less cruft, less in the way.</p>
+</blockquote>
+
+And speaking of writing, it's been a while since I've written anything. Which is perfectly fine, when you're writing to an audience of none.
+
+[Jason Santa Maria]: http://abeyang.berkmedia.org/me/articles/writing-workflow/
+[website]: http://jasonsantamaria.com/articles/five-and-ten
