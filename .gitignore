@@ -2,3 +2,4 @@ app/*
 STACEY*
 index.php
 .htaccess
+.DS_Store

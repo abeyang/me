@@ -12,15 +12,15 @@ There's an easier way to do all this. Rather than baking everything inside After
 
 First, let's toggle on the transparency. That way, you can distinguish your image/graphic/title from the transparent background:
 
-![After Effects - toggle on transparency](@path/ae1.png)
+<span class="figure">![After Effects - toggle on transparency](@path/ae1.png)</span>
 
 After you're done with the animation, we'll need to export it in the right way. Follow this example -- the crucial step is outputting with RGB+alpha (default is just RGB)[^2]:
 
-![After Effects - export with RGB+alpha](@path/ae2.png)
+<span class="figure">![After Effects - export with RGB+alpha](@path/ae2.png)</span>
 
 If you view your export in Quicktime, it looks as if it's over a black background. However, if you import it into Premiere, you'll notice that the black background isn't there:
 
-![Premiere - transparent video overlayed](@path/premiere.png)
+<span class="figure">![Premiere - transparent video overlayed](@path/premiere.png)</span>
 
 You can now swap out the video layer underneath to your heart's content.
 
