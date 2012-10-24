@@ -1,0 +1,11 @@
+title: Gracepoint Riverside Website
+-
+date: September 2012
+-
+fields: UX design, web development, responsive layout, twitter bootstrap
+-
+content: 
+
+Designed and led development (small crew of four) for the [Gracepoint Riverside website]. Took about three weeks from design to version 1 release.
+
+[Gracepoint Riverside website]: http://gracepointriverside.org/

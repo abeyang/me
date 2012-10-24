@@ -1,0 +1,51 @@
+
+:header
+
+	<!-- MAIN -->
+
+	<div id="project" class="container offset">
+		<div class="row">
+
+			<div id="content" class="span8">
+
+				foreach $html do
+					@content
+				endforeach
+
+				foreach $images do
+					<img src="@url" alt="@name">
+				endforeach
+
+			</div> <!-- /#content -->
+			
+			<div id="aside" class="span4">
+				<strong>@title</strong>
+				
+				@content
+				
+				<span class="date"><i class="icon-time"></i> @date</span>
+                <div class="fields">
+	        		if @fields do
+	        			<i class="icon-tags"></i> @fields
+	        		endif
+        		</div>
+        		
+				if $siblings do
+					<div class="nextprev">
+						<div class="prev">
+							:next-page
+						</div>
+						<div class="next">
+							:previous-page
+						</div>
+					</div>
+				endif
+			</div> <!-- /#aside -->
+
+
+		</div>
+
+
+	</div> <!-- /.container -->
+
+:footer

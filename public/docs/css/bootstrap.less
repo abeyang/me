@@ -72,6 +72,14 @@ body {
 .container {
 	&.offset { margin-top: 50px;}
 }
+#home {
+	#content a {
+		display: block;
+		float: left;
+
+		img { max-width: 300px; }
+	}
+}
 
 #article {
 	h3 { 
@@ -81,6 +89,10 @@ body {
 	}
 	
 	.date i { margin-top: 3px; }
+}
+
+#project {
+	img { margin-bottom: 10px; }
 }
 
 .horizontal .next { text-align: right; }
@@ -102,6 +114,9 @@ body {
 	text-align: center;
 }
 
+.nextprev { margin-top: 30px; }
+
+
 // UP TO LANDSCAPE PHONE
 // ---------------------
 @media (max-width: 480px) {
@@ -117,6 +132,10 @@ body {
 // PORTRAIT TABLET TO DEFAULT DESKTOP
 // ----------------------------------
 @media (min-width: 768px) and (max-width: 1199px) {
+	#home {
+		#content a img { max-width: 313px; }
+	}
+	
 	#articles .tags { 
 		text-align: right; 
 		padding-top: 7px;
