@@ -2,7 +2,7 @@ title: TII for iPad
 -
 date: July 2012
 -
-fields: UX design, interaction
+fields: iPad, UX design, interaction
 -
 content: 
 

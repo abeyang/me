@@ -1,0 +1,9 @@
+title: TII Document Viewer
+-
+date: March 2011
+-
+fields: UX design, interaction
+-
+content: 
+
+Had to design for three separate modes: Originality, GradeMark, and PeerMark. Each mode has its own set of rules and behaviors, along with its own set of sidebars. I tried to make each mode distinct, but at the same time, maintain some visual consistency.

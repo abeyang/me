@@ -1,0 +1,9 @@
+title: G-Live Undo Intro
+-
+date: April 2009
+-
+fields: video, direction
+-
+content: 
+
+Ensuring that all the shots and sequences were hit (all live) was an especially big challenge. Heavily inspired by Michel Gondry.

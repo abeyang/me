@@ -1,0 +1,16 @@
+title: acts2fellowship Magazine Theme (for Wordpress)
+-
+date: September 2011
+-
+fields: UX design, web development
+-
+content: 
+
+Designed and led development for this Wordpress theme.
+
+Currently, some flavor of this is being used on these websites:
+
++ [acts2fellowship Riverside website](http://www.acts2fellowship.org/riverside/)
++ [Kairos Christian Fellowship website](http://www.kairosfellowship.org/berkeley/)
++ [acts2fellowship Minnesota website](http://www.acts2fellowship.org/minnesota)
++ [Koinonia website](http://www.koinonia.net/berkeley/)

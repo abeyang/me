@@ -2,7 +2,7 @@ title: Welcome to Gracepoint
 -
 date: August 2010
 -
-fields: graphic design, animation, sfx
+fields: video, graphic design, animation, sfx
 -
 content: 
 
