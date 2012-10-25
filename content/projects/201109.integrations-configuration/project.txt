@@ -1,0 +1,9 @@
+title: Integrations Configuration
+-
+date: September 2011
+-
+fields: UX design, interaction
+-
+content: 
+
+Provided a face lift (and improved interactions) for a set of internal tools, allowing our admins to set up accounts for different clients. Different "integrations" had different requirements, so I had to provide a framework that was flexible enough to account for the differences.
