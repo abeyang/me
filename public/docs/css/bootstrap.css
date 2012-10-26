@@ -6006,20 +6006,91 @@ a.badge:hover {
   visibility: hidden;
 }
 body {
-  /* 	background: url(../img/bg/groovepaper.png) repeat;  */
-
+  background-color: #fcfcfc;
   padding-bottom: 50px;
 }
 .container.offset {
   margin-top: 50px;
+}
+#home p.lead {
+  font-size: 30px;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+#home #content a {
+  display: block;
+  float: left;
+  max-width: 25%;
+  position: relative;
+  overflow: hidden;
+}
+#home #content a img {
+  max-width: 100%;
+  opacity: 0.33;
+  filter: alpha(opacity=33);
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -ms-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+#home #content a .bar {
+  height: 28px;
+  overflow-y: hidden;
+  background: #E01700;
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  bottom: -28px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+#home #content a .bar div {
+  padding: 0 7px;
+}
+#home #content a .bar i {
+  margin-top: 7px;
+}
+#home #content a:hover img {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+#home #content a:hover .bar {
+  bottom: 0;
+  opacity: 1;
+  filter: alpha(opacity=100);
 }
 #article h3 {
   font-family: Georgia, "Times New Roman", Times, serif;
   text-transform: none;
   margin: 18px 0;
 }
+#article .date {
+  font-family: MuseoSans500, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 #article .date i {
   margin-top: 3px;
+}
+#project img {
+  margin-bottom: 10px;
+}
+#project .metadata {
+  position: relative;
+  padding-left: 20px;
+}
+#project .metadata.subtle {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+#project .metadata i {
+  position: absolute;
+  top: 4px;
+  left: 0;
 }
 .horizontal .next {
   text-align: right;
@@ -6030,24 +6101,36 @@ body {
   opacity: 0.25;
   filter: alpha(opacity=25);
 }
-.date {
-  font-family: MuseoSans500, "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
 .figure {
   display: block;
   padding: 5px;
   background-color: #f5f5f5;
   text-align: center;
 }
-@media (max-width: 480px) {
-  
+.nextprev {
+  margin-top: 30px;
 }
 @media (max-width: 767px) {
   .figure {
     padding: 0;
   }
+  #home #content a {
+    max-width: 50%;
+  }
+}
+@media (max-width: 480px) {
+  #home #content a {
+    max-width: 100%;
+  }
+  #home #content a img {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
+  #home #content a {
+    max-width: 33%;
+  }
   #articles .tags {
     text-align: right;
     padding-top: 7px;

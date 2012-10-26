@@ -1,0 +1,13 @@
+title: TII Dashboard
+-
+date: January 2012
+-
+fields: UX design, interaction, development, jquery, twitter bootstrap
+-
+content: 
+
+Created a dashboard for instructors to get a pulse of what's going across all their classes. A big challenge was visualizing how things would scale (class size might differ), as well as keeping track of what things are actionable on what events. So, I've created a [prototype] (using jQuery and Twitter Bootstrap) to better help visualize the whole thing before it went into development and production. This allowed me to create a master list of students using javascript/json, and add them to different classes/assignments as I see fit. 
+
+In addition, I also designed null states -- what the dashboard might look like if nothing has been assigned.
+
+[prototype]: http://dl.dropbox.com/u/11663/Websites/Bootstrap/abe/tiptip/tiptip2.html
