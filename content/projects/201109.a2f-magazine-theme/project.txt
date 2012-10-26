@@ -6,11 +6,10 @@ fields: UX design, web development
 -
 content: 
 
-Designed and led development for this Wordpress theme.
+Designed and led development for this Wordpress theme. One year after its initial release, it (or some variation of it) is now being used by at least 7 different campus groups across 5 cities. Here is a sample of some of them:
 
-Currently, some flavor of this is being used on these websites:
-
-+ [acts2fellowship Riverside website](http://www.acts2fellowship.org/riverside/)
-+ [Kairos Christian Fellowship website](http://www.kairosfellowship.org/berkeley/)
-+ [acts2fellowship Minnesota website](http://www.acts2fellowship.org/minnesota)
-+ [Koinonia website](http://www.koinonia.net/berkeley/)
++ [acts2fellowship Riverside](http://www.acts2fellowship.org/riverside/)
++ [SFSU Koinonia](http://sfsukoinonia.org/)
++ [Kairos Christian Fellowship in Berkeley](http://www.kairosfellowship.org/berkeley/)
++ [acts2fellowship Minnesota](http://www.acts2fellowship.org/minnesota)
++ [Koinonia Davis](http://www.koinonia.net/davis/)

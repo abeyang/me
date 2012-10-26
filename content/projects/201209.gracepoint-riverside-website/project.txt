@@ -6,6 +6,8 @@ fields: UX design, web development, responsive layout, twitter bootstrap
 -
 content: 
 
-Designed and led development (small crew of four) for the [Gracepoint Riverside website]. Took about three weeks from design to version 1 release.
+Designed and led development (small crew of four) from scratch for the [Gracepoint Riverside website]. Took about three weeks from design to version 1 release. 
+
+Greatest power is in its simpicity -- not only in how it looks, but by the controls. One flat file controls the majority of the information -- information that spans across multiple pages (like time, location, rides, etc). I've purposefully avoided setting up a database.
 
 [Gracepoint Riverside website]: http://gracepointriverside.org/
