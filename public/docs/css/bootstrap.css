@@ -6092,6 +6092,11 @@ body {
   top: 4px;
   left: 0;
 }
+.navbar .brand {
+  padding-left: 28px;
+  margin-left: 0;
+  background: url(../img/ay-logo.png) 0 8px no-repeat;
+}
 .horizontal .next {
   text-align: right;
 }
