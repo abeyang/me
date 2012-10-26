@@ -75,10 +75,8 @@ body {
 #home {
 
 	p {
-/* 		color: #555; */
 		
 		&.lead {
-/* 			color: #222; */
 			font-size: 30px;
 			line-height: 1.5;
 			margin-bottom: 16px;
@@ -90,13 +88,9 @@ body {
 		float: left;
 		max-width: 25%;
 		position: relative;
-		overflow-y: hidden;
+		overflow: hidden;
 		
 		img { 
-/*
-			max-width: 25%;
-			float: left;			
-*/
 			max-width: 100%;
 			
 			.opacity(33);
@@ -108,7 +102,6 @@ body {
 			overflow-y: hidden;
 			background: #E01700;
 			color: #fff;
-/* 			padding: 3px 7px; */
 			position: absolute;
 			width: 100%;
 			bottom: -28px;
@@ -116,6 +109,8 @@ body {
 			.transition(all 0.3s ease-in-out);
 			
 			div { padding: 0 7px; }
+			
+			i { margin-top: 7px; }
 		}
 		
 		&:hover {
@@ -137,11 +132,26 @@ body {
 		margin: 18px 0;
 	}
 	
-	.date i { margin-top: 3px; }
+	.date {
+		font-family: @sansFontFamily;
+		i { margin-top: 3px; }
+	}
 }
 
 #project {
 	img { margin-bottom: 10px; }
+	.metadata {
+		position: relative;
+		padding-left: 20px;
+		
+		&.subtle { .opacity(50); }
+
+		i {
+			position: absolute;
+			top: 4px;
+			left: 0;
+		}
+	}
 }
 
 .horizontal .next { text-align: right; }
@@ -150,10 +160,6 @@ body {
 	font-family: @sansFontFamily;
 	font-size: 16px;
 	.opacity(25);
-}
-
-.date {
-	font-family: @sansFontFamily;
 }
 
 .figure {

@@ -20,7 +20,17 @@
 				get "projects" do
 			      foreach $children do
 			      
-			      <a href="@url"><img src="@thumb" /><div class="bar"><div>@title</div></div></a>
+			      <a href="@url">
+			      	<img src="@thumb" />
+			      	<div class="bar">
+			      		<div>
+			      			@title
+			      			if $html do
+			      				<i class="icon-facetime-video icon-white pull-right"></i>
+			      			endif
+			      		</div>
+			      	</div>
+			      </a>
 
 			      endforeach
 			
