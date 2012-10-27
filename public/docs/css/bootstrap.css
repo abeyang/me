@@ -6017,6 +6017,23 @@ body {
   line-height: 1.5;
   margin-bottom: 16px;
 }
+#home ul {
+  margin: 0;
+  list-style: none;
+}
+#home ul li {
+  float: left;
+  font-size: 14px;
+  margin-right: 10px;
+  opacity: 0.33;
+  filter: alpha(opacity=33);
+}
+#home ul li a {
+  color: #222;
+}
+#home ul li i {
+  margin-top: 1px;
+}
 #home #content a {
   display: block;
   float: left;
