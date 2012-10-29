@@ -1,0 +1,11 @@
+title: a2f Graphic Designs
+-
+date: 2010 - 2012
+-
+fields: graphic design
+-
+content: 
+
+Graphic designs and assets for the [acts2fellowship website]. Designed using Photoshop and occasionally Illustrator.
+
+[acts2fellowship website]: /me/projects/a2f-magazine-theme/
