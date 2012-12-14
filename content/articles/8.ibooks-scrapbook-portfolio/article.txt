@@ -1,0 +1,65 @@
+title: iBooks Scrapbook / Portfolio
+-
+date: December 14, 2012
+-
+tags: iBooks
+-
+draft: true
+-
+content: 
+
+Aperture -- and more recently, Lightroom -- gives the user the ability to easily create photo books. However, after making a few books, I've experienced a few pain points:
+
+1. **Price**: to save on money, you'll have to get the smallest version of the book. Moreover, it makes you extra conscientious of how many pages you have, thereby limiting the number of photos you put in
+2. **Photo size**: it's hard to pick and choose which photos to enlarge, and which photos to shrink. It would be nice if there's a way to somehow zoom in on the photos.
+3. **No videos**
+
+If your intended recipient has an iPad -- and if you have a Mac -- then it's now doable, and it addresses each of those pain points. It's cheap (free), you can zoom in and out of your photos, and you can include videos!
+
+<span class="figure">![Screenshot of iBooks scrapbook](@path/ibooks-screenshot.jpg)</span>
+
+### Getting Started
+
+First, go to the App Store and download iBooks Author (free). After you install it, download this [template] I've created and place it in this directory:
+
+> /Users/*your_account_name*/Library/Application Support/iBooks Author/Templates/
+
+### Modifying Template
+
+1. **Cover**
+2. **Table of Contents**
+3. **Chapter/Section Slides**
+
+### Additional Content
+
+**Intro Media**
+
+**Slides**
+
+**Photo Widget**
+
+### Photo/Video Optimization
+
+
+---
+
+There's an easier way to do all this. Rather than baking everything inside After Effects, why not just export the animation as a transparent video?[^1] That way, when you need to swap something out, it happens in the editor (like Premiere), rather than in After Effects.
+
+First, let's toggle on the transparency. That way, you can distinguish your image/graphic/title from the transparent background:
+
+<span class="figure">![After Effects - toggle on transparency](@path/ae1.png)</span>
+
+After you're done with the animation, we'll need to export it in the right way. Follow this example -- the crucial step is outputting with RGB+alpha (default is just RGB)[^2]:
+
+<span class="figure">![After Effects - export with RGB+alpha](@path/ae2.png)</span>
+
+If you view your export in Quicktime, it looks as if it's over a black background. However, if you import it into Premiere, you'll notice that the black background isn't there:
+
+<span class="figure">![Premiere - transparent video overlayed](@path/premiere.png)</span>
+
+You can now swap out the video layer underneath to your heart's content.
+
+[template]: ...
+
+[^1]: Of course, this doesn't work for all animations/title slides. You'll have to use your judgment.
+[^2]: Unfortunately, the h.264 codec doesn't allow RGB+alpha.
