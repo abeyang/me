@@ -1,0 +1,16 @@
+title: Kareo Chrome Exploration
+-
+date: December 2012
+-
+fields: UX design
+-
+content: 
+
+We were toying around with the idea of bring our [current app] to become completely web-native. For this project, we focused only on the visuals &mcopy; given the nomenclature and architecture we have today, what might it look like tomorrow?
+
+Having a visual language to play with, interaction design will be more thought-out in subsequent projects (like the [Encounter Lifecycle]).
+
+Needless to say, a lot of influence was drawn from the new "flat-design" aesthetic.
+
+[current app]:http://img51.imageshack.us/img51/3748/findpatientscreenshot62.jpg
+[Encounter Lifecycle]:
