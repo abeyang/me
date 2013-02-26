@@ -1,0 +1,13 @@
+title: Encounter Lifecycle
+-
+date: February 2013
+-
+fields: UX design, web development, jquery, framework, twitter bootstrap, php, angularjs
+-
+content: 
+
+The medical billing process is extremely complex, and oftentimes overly complicated. After talking to some of our cliens, and getting feedback from our current in-house billers, we came up with this streamlined process of billing. Rather than separating appointments, encounters, claims, and payments into four separate silos (as it's currently done in the app today), it would be better fit to have them all exist on one page, with only the relevant info being surfaced.
+
+Screenshots from Photoshop are attached here &mdash; currently building out a **working prototype** using Twitter Bootstrap and Angular JS. Current design is based off the [Chrome Exploration project].
+
+[Chrome Exploration project]:@url../chrome-exploration/

@@ -6043,8 +6043,8 @@ body {
 }
 #home #content a img {
   max-width: 100%;
-  opacity: 0.33;
-  filter: alpha(opacity=33);
+  opacity: 0.75;
+  filter: alpha(opacity=75);
   -webkit-transition: opacity 0.3s ease-in-out;
   -moz-transition: opacity 0.3s ease-in-out;
   -ms-transition: opacity 0.3s ease-in-out;
