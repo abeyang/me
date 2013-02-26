@@ -13,4 +13,4 @@ Having a visual language to play with, interaction design will be more thought-o
 Needless to say, a lot of influence was drawn from the new "flat-design" aesthetic.
 
 [current app]:http://img51.imageshack.us/img51/3748/findpatientscreenshot62.jpg
-[Encounter Lifecycle]:@url../chrome-exploration/
+[Encounter Lifecycle]:@url../encounter-lifecycle/
