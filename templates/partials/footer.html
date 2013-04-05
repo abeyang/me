@@ -11,20 +11,8 @@
 */
 		
 		$('.video').fitVids();
-		
-		// Gaug.es tracker
-		  var _gauges = _gauges || [];
-		  (function() {
-		    var t   = document.createElement('script');
-		    t.type  = 'text/javascript';
-		    t.async = true;
-		    t.id    = 'gauges-tracker';
-		    t.setAttribute('data-site-id', '505e10e8f5a1f55664000024');
-		    t.src = '//secure.gaug.es/track.js';
-		    var s = document.getElementsByTagName('script')[0];
-		    s.parentNode.insertBefore(t, s);
-		  })();
-		  
+		analytics.trackLink($('.resume'), 'Clicked on Resume');
+		analytics.trackLink($('.email'), 'Clicked on Email');
 		  
 	</script>
 	
