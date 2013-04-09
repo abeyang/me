@@ -12,6 +12,12 @@
 // when in Production, set to true
 c::set('inproduction', false);
 
+// by default, root is '/'
+// set root to /this/is/my/root
+// c::set('root', '/');
+c::set('root', '/me');
+
+c::set('initials', 'kl');
 c::set('name', 'Kareo Labs');
 c::set('profession', 'Medical Billing');
 c::set('location', 'Irvine, CA');
@@ -20,9 +26,10 @@ c::set('description', 'Praesent commodo cursus magna, vel scelerisque nisl conse
 c::set('keywords', 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam quis risus eget urna mollis ornare vel eu leo.');
 
 // core functions
+
+// takes root into account
 function url($url) {
-	// currently returns url -- might need to adjust this later on
-	return $url;
+	return c::get('root') . $url;
 }
 
 ?>

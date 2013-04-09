@@ -69,7 +69,7 @@
 
 // Colors
 
-@orange: #F7941E;		// Kareo orange
+@orange: #FD932E;		// Kareo orange
 @green: #249718;		// deep green
 @red: #EE604D;			// deep red
 @lightgreen: #B6D99F;	// Snowbird green
@@ -131,6 +131,7 @@ h1 {
 	font-size: 36px;
 	font-weight: 300;
 	margin-top: 0;
+	text-align: center;
 }
 
 h2 { 
@@ -180,18 +181,25 @@ h3 {
 // ============================================================================================================
 
 #home {
+	background: @darkgray;
 	padding-top: @padding * 3;
+	// background: @gray;
 
 	h1 {
+		text-align: left;
 		font-size: 36px;
 		font-weight: 300;
 		margin-top: 0;
-		color: @gray;
+		color: @lightergray;
 
 		strong {
 			font-weight: 900;
-			color: @black;
+			color: @white;
 		}
+	}
+
+	.projects {
+		margin-top: @padding * 4;
 	}
 }
 
@@ -215,25 +223,51 @@ a {
 
 }
 
-// http://css3.bradshawenterprises.com/flip/
+.subtitle { text-align: center; }
 
+// http://css3.bradshawenterprises.com/flip/
 .card {
+	display: block;
 	margin: 0 @padding;
 	height: @logoWidth;
 	width: @logoWidth;
-	.border-radius(@logoWidth / 2);
-	background: @lightgreen;
+	.border-radius(@logoWidth);
+	border: 5px solid @white;
 	text-align: center;
-	
-	.face {
-		color: @white;
+	background: transparent;
 
-		&.front {
-			font-size: 36px;
-			padding-top: 20px;			
+	&.logo {
+	background: @white;
+	border: none;
+			
+		.face {
+			padding-top: 20px;
+			color: @gray;
+
+			&.front { 
+				font-family: 'Gabriela', serif; 
+				font-size: 36px;
+				
+			}
 		}
 	}
+	
+	.face {
+		padding-top: 35px;
+		color: @white;
+		font-weight: 700;
+	}
 
+}
+
+.container {
+	padding-top: @padding * 2;
+	padding-bottom: @padding * 2;
+
+	&.orange {
+		background-color: @orange;
+		h1,h2,h3,div,span { color: @white; }
+	}
 }
 
 
@@ -299,50 +333,4 @@ label {
 	}
 }
 
-// Modal
-
-.modalpadding {
-	padding: 10px 40px;
-}
-
-.modal {
-	.border-radius(3px);
-}
-	
-.modal-header {
-	border-bottom: none;
-	.border-radius(3px 3px 0 0);
-	background-color: @white;	
-	.modalpadding;
-	padding-bottom: 0;
-	
-	h1 { margin-top: @margin; margin-bottom: 0;}
-	
-	.close { font-size: 60px; font-weight: normal; margin-top: 20px; }
-}
-
-.modal-body { 
-	.modalpadding; 
-	
-	.video { margin-bottom: @margin; }
-}
-
-.modal-footer {
-	border-top: none;
-	.border-radius(0 0 3px 3px);
-	background-color: @black;
-	.modalpadding;
-	padding-bottom: @margin*2;
-	
-	.alertband { text-align: left; }
-}
-
-.alertband {
-	background-color: @black;
-	color: @white;
-	text-align: center;
-	padding: @margin/2 0;
-	
-	strong { color: @white; }
-}
 
