@@ -31,6 +31,8 @@ require_once('CONFIG.php');
 
 	<link rel="stylesheet/less" type="text/css" href="<?= url('/assets/styles/abeyang.bootstrap.less') ?>" />
 	<script type="text/javascript" src="<?= url('/assets/js/less-1.3.3.min.js') ?>"></script>
+	<script type="text/javascript" src="<?= url('/assets/js/video.min.js') ?>"></script>
+	<script type="text/javascript" src="<?= url('/assets/js/jquery.visible.min.js') ?>"></script>
 
 	<script type="text/javascript">
 		less.env = "development";
