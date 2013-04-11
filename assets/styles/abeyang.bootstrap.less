@@ -87,10 +87,10 @@
 @white: #fff;
 
 // Typography
-@fontSize: 18px;
+@fontSize: 20px;
 @fontSizeSmall: 14px;
 
-@lineHeight: 1.3;
+@lineHeight: 1.4;
 @lineHeightSmall: 1.1;
 
 // Spacing + widths + height
@@ -175,14 +175,14 @@ h3 {
 }
 
 // template for links
-.linkify(@color) {
-	color: @black;
+.linkify(@bordercolor, @color: @black) {
+	color: @color;
 	text-decoration: none;
-	border-bottom: 2px solid lighten(@color, 20);
+	border-bottom: 2px solid lighten(@bordercolor, 20);
 	outline: 0;
 	
 	&:hover {
-		border-bottom-color: @color;
+		border-bottom-color: @bordercolor;
 		text-decoration: none;
 	}
 }
@@ -220,6 +220,25 @@ h3 {
 	h2 { color: @orange; }
 	
 	a { .linkify(@orange); }
+
+	#typer {
+		color: @orange;
+		font-size: 30px;
+		font-weight: 400;
+	}
+
+	.spec {
+		height: 500px;
+		background: #fafafa url(../../assets/img/prototype-spec.png) bottom center no-repeat;
+	}
+
+	.video {
+		.subtitle {
+			color: darken(@orange, 15);
+		}
+
+		a { .linkify(@orange, @gray); }
+	}
 }
 
 // ============================================================================================================
@@ -234,7 +253,6 @@ a {
 	.linkify(@link);
 }
 
-// .subtitle { text-align: center; }
 
 // http://css3.bradshawenterprises.com/flip/
 .card {
@@ -291,12 +309,18 @@ section {
 
 	&.orange {
 		background-color: @orange;
-		h1,h2,h3,div,span,li { color: @white; }
+		h1,h2,h3,div,span,li,p { color: @white; }
+	}
+
+	&.lightgray {
+		background-color: #fafafa;
+		border-top: 1px solid @lightestgray;
+		border-bottom: 1px solid @lightestgray;
 	}
 
 	&.black {
 		background-color: @black;
-		h1,h2,h3,div,span,li { color: @white; }
+		h1,h2,h3,div,span,li,p { color: @gray; }
 	}
 
 	img {
@@ -332,6 +356,7 @@ section {
 // used for videos (780px)
 .browser {
 	margin-top: @padding;
+	margin-bottom: @padding;
 	padding-top: 40px;
 	background: url(../../assets/img/browserbar.png) top left no-repeat;
 	
