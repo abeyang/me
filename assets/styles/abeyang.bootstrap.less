@@ -72,6 +72,7 @@
 @orange: #FD932E;		// Kareo orange
 @green: #249718;		// deep green
 @red: #EE604D;			// deep red
+@beige: #F3EDE0;
 @lightgreen: #B6D99F;	// Snowbird green
 @lightblue: #7FCDE8;	// Snowbird blue
 @link: #0090ff;			// blue
@@ -118,6 +119,11 @@
 	font-family: 'Source Sans Pro', sans-serif;
 }
 
+.alttype {
+	font-size: 30px;
+	font-weight: 400;
+}
+
 body, div, p, input, label {
 	.defaulttype;
 }
@@ -139,6 +145,7 @@ h2 {
 	font-size: 27px;
 	font-weight: 700;
 	margin-top: 0;
+	margin-bottom: 20px;
 }
 
 h3 {
@@ -178,10 +185,11 @@ h3 {
 .linkify(@bordercolor, @color: @black) {
 	color: @color;
 	text-decoration: none;
-	border-bottom: 2px solid lighten(@bordercolor, 20);
+	border-bottom: 2px solid lighten(@bordercolor, 30);
 	outline: 0;
 	
 	&:hover {
+		color: @color;
 		border-bottom-color: @bordercolor;
 		text-decoration: none;
 	}
@@ -223,8 +231,7 @@ h3 {
 
 	#typer {
 		color: @orange;
-		font-size: 30px;
-		font-weight: 400;
+		.alttype;
 	}
 
 	.spec {
@@ -241,6 +248,26 @@ h3 {
 	}
 }
 
+#ipad {
+	.small {
+		a { .linkify(@link, @lightgray); }
+		ol { margin-left: 16px; }
+	}
+
+	.sketch {
+		height: 700px;
+		background: @beige url(../../assets/img/ipad-sketches.jpg) center center no-repeat;
+
+		.slug {
+			.alttype;
+			color: @white;
+			background-color: rgba(34,34,34,.75);
+			padding: 10px 25px;
+			margin-top: 150px;
+		}
+	}
+}
+
 // ============================================================================================================
 //
 // COMPONENTS
@@ -251,6 +278,7 @@ h3 {
 
 a {
 	.linkify(@link);
+	.transition(border-color 0.5s ease);
 }
 
 
@@ -289,14 +317,31 @@ a {
 
 }
 
-header {
+header#nav {
 	position: absolute;
 	top: 0;
 	width: 100%;
 	padding: @padding/2 0;
-	background-color: rgba(34,34,34,.5);
-	
-	div, span { color: @white;}
+	.opacity(50);
+	.transition(opacity 0.6s ease);
+
+	// background-color: rgba(34,34,34,.5);
+
+	&:hover {
+		.opacity(100);
+	}
+
+	a {
+		.linkify(@link, @white);
+		border-bottom: 0;
+		text-shadow: 0 2px rgba(34,34,34,.25);
+	}
+
+	.info { 
+		text-align: right; 
+
+		i { padding-left: @padding; }
+	}
 }
 
 section {
@@ -309,6 +354,11 @@ section {
 
 	&.orange {
 		background-color: @orange;
+		h1,h2,h3,div,span,li,p { color: @white; }
+	}
+
+	&.blue {
+		background-color: @link;
 		h1,h2,h3,div,span,li,p { color: @white; }
 	}
 
@@ -329,7 +379,7 @@ section {
 }
 
 .small {
-	div, li {
+	p, div, li {
 		font-size: @fontSizeSmall;
 		color: @gray;
 	}
