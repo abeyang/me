@@ -257,14 +257,94 @@ h3 {
 	.sketch {
 		height: 700px;
 		background: @beige url(../../assets/img/ipad-sketches.jpg) center center no-repeat;
+		border-top: 1px solid @lightergray;
+		border-bottom: 1px solid @lightergray;
 
 		.slug {
 			.alttype;
 			color: @white;
 			background-color: rgba(34,34,34,.75);
+			width: 500px;
 			padding: 10px 25px;
-			margin-top: 150px;
+			margin: 200px auto 0;
+			.opacity(0);
 		}
+	}
+
+	.hifi {
+		height: 700px;
+
+		article {
+			overflow: hidden;
+			position: absolute;
+			left: 0;
+			right: 0;			
+		}
+
+		section {
+			-webkit-transform: none;
+			-moz-transform: none;
+			-ms-transform: none;
+			-o-transform: none;
+			transform: none;
+			background: #c0c0c0;
+			width: 512px;
+			height: 380px;
+			position: absolute;
+			// top: 50%;
+			left: 50%;
+			margin-left: -256px;
+			margin-top: 120px;
+			opacity: 0;
+
+			&.bespoke-slide {
+				// .transition(~"transform .7s ease, opacity .7s ease, background-color .7s ease");
+				-webkit-transition: -webkit-transform .7s ease, opacity .7s ease, background-color .7s ease;
+				-moz-transition: -moz-transform .7s ease, opacity .7s ease, background-color .7s ease;
+				-ms-transition: -ms-transform .7s ease, opacity .7s ease, background-color .7s ease;
+				-o-transition: -o-transform .7s ease, opacity .7s ease, background-color .7s ease;
+				transition: transform .7s ease, opacity .7s ease, background-color .7s ease;
+			}
+
+			&.bespoke-active {
+				opacity: 1;
+				z-index: 1;
+			}
+		}
+	}
+
+	/* Classic Theme */
+	.classic {
+		background: rgba(243, 111, 86, 0.2);
+	}
+	.classic section,
+	.classic .arrow:hover {
+		background: rgb(243, 111, 86);
+	}
+	.classic a {
+		color: rgb(243, 111, 86);
+	}
+	.classic section.bespoke-before {
+		.translate3d(-1920px, 0, 0);
+	}
+	.classic section.bespoke-before-2 {
+		.translate3d(-1280px, 0, 0);
+		.opacity(10);
+	}
+	.classic section.bespoke-before-1 {
+		.translate3d(-640px, 0, 0);
+		.opacity(30);
+	}
+	.classic section.bespoke-after {
+		.translate3d(1920px, 0, 0);
+	}
+	.classic section.bespoke-after-2 {
+		.translate3d(1280px, 0, 0);
+		.opacity(10);
+	}
+	.classic section.bespoke-after-1 {
+		.translate3d(640px, 0, 0);
+		.opacity(30);
 	}
 }
 
