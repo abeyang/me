@@ -50,32 +50,34 @@
 
 <section class="sketch">
 	<div class="slug">
-		Before even touching Photoshop, I sketched and sketched.
-		<br />For any given design, we went through dozens of iterations.
+		Countless lo-fi sketches such as these were created before even touching Photoshop.
 	</div>
 </section>
 
-<section class="hifi">
+<section class="hifi carousel">
 	<div class="title">
 		<h2>High Fidelity Mockups</h2>
 		<p class="subtitle">Designed with love in Photoshop</p>		
 	</div>
 	
-	<article class="classic">
-		<section>Slide 1</section>
-		<section>Slide 2</section>
-		<section>Slide 3</section>
-		<section>Slide 4</section>
-		<section>Slide 5</section>
-		<section>Slide 6</section>
-		<section>Slide 7</section>
+	<article class="bespoke">
+		<section><img src="ipad-highlight.jpg" /></section>
+		<section><img src="ipad-newcomment.jpg" /></section>
+		<section><img src="ipad-recording.jpg" /></section>
+		<section><img src="ipad-rubric.jpg" /></section>
+		<section><img src="ipad-rubric-popover.jpg" /></section>
+		<section><img src="ipad-graded.jpg" /></section>
 	</article>
 </section>
+
+<!-- <section class="footer">
+	&nbsp;
+</section> -->
 
 <script>
 
 	$(document).ready(function() {
-		bespoke.horizontal.from('.classic');
+		bespoke.horizontal.from('.bespoke');
 		$(window).scroll(function(event) {
 
 			// make sure text only appears once

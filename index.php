@@ -34,7 +34,7 @@
 			</a>
 		</div>
 		<div class="span2">
-			<a href="#" class="card">
+			<a href="portfolio/ipad/" class="card">
 				<div class="face front">
 					iPad
 				</div>
