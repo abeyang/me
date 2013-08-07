@@ -16,7 +16,7 @@
 		</div>		
 	</section>
 	<section class="turnitin-webapp">
-		<a href="#" class="cover">
+		<a href="case-study/turnitin-webapp/" class="cover">
 			<h4>Turnitin</h4>
 			<h1>Web app</h1>
 			<p>View case study</p>

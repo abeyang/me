@@ -1,4 +1,4 @@
 <? 
-	require_once('../kirby.php'); 
+	require_once('../assets/php/kirby.php'); 
 	go('../index.php');
 ?>

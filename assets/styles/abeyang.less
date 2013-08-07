@@ -60,6 +60,8 @@
 @import "../bootstrap-3.0.0-wip/less/carousel.less";
 @import "../bootstrap-3.0.0-wip/less/jumbotron.less";
 
+// 3rd-Party Plugins
+@import "../bootstrap-3.0.0-wip/less/retina.less";
 @import "../font-awesome/less/font-awesome.less";
 
 // Utility classes
@@ -76,6 +78,7 @@
 
 @orange: #FD932E;		// Kareo orange
 @green: #249718;		// deep green
+@green-tii: #54AA65;
 @red: #EE604D;			// deep red
 @red-tii: #CF3C40;
 @beige: #F3EDE0;
@@ -171,6 +174,11 @@ h4 {
 	font-size: @fontSize * 1.4;
 }
 
+.pad {
+	&.top-15 { padding-top: 15px; }
+	&.top-30 { padding-top: 30px; }
+}
+
 // template for buttons (all except the default)
 .buttonify(@color) {
 	border: 0;
@@ -210,6 +218,10 @@ h4 {
 	#hello {
 		h1 { text-align: left; }
 	}
+}
+
+#webapp {
+	a { .linkify(@green); }
 }
 
 #prototyping {
@@ -443,19 +455,22 @@ a {
 }
 
 
+@section-height: 560px;
+@section-height-tall: 720px;
+@section-height-thin: 340px;
 
 section {
-	height: 560px;
+	height: @section-height;
 	padding-top: @padding * 2;
 	padding-bottom: @padding * 2;
 
 	&#hello {
-		height: 720px;
+		height: @section-height-tall;
 		padding-top: @padding * 6;
 	}
 
 	&.turnitin-webapp {
-		background-color: @green;
+		background-color: @green-tii;
 		h1,h2,h3,h4,div,span,li,p { color: @white; }
 	}
 
@@ -467,6 +482,10 @@ section {
 	&.secret {
 		background-color: @black;
 		h1,h2,h3,h4,div,span,li,p { color: @white; }
+	}
+
+	&.thin {
+		height: @section-height-thin;
 	}
 
 	&.intro {
