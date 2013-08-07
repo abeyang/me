@@ -1,65 +1,70 @@
-/*!
- * Bootstrap v2.3.1
- *
- * Copyright 2012 Twitter, Inc
- * Licensed under the Apache License v2.0
- * http://www.apache.org/licenses/LICENSE-2.0
- */
+// 
+// Bootstrap v3.0.0
+// 
+// Copyright 2013 Twitter, Inc
+// Licensed under the Apache License v2.0
+// http://www.apache.org/licenses/LICENSE-2.0
+// 
+// Designed and built with all the love in the world by @mdo and @fat.
+// 
 
 // Core variables and mixins
-@import "../bootstrap/less/variables.less"; // Modify this for custom colors, font-sizes, etc
-@import "../bootstrap/less/mixins.less";
+@import "../bootstrap-3.0.0-wip/less/variables.less";
+@import "../bootstrap-3.0.0-wip/less/mixins.less";
 
-// CSS Reset
-@import "../bootstrap/less/reset.less";
+// Reset
+@import "../bootstrap-3.0.0-wip/less/normalize.less";
+@import "../bootstrap-3.0.0-wip/less/print.less";
 
-// Grid system and page structure
-@import "../bootstrap/less/scaffolding.less";
-@import "../bootstrap/less/grid.less";
-@import "../bootstrap/less/layouts.less";
+// Core CSS
+@import "../bootstrap-3.0.0-wip/less/scaffolding.less";
+@import "../bootstrap-3.0.0-wip/less/type.less";
+@import "../bootstrap-3.0.0-wip/less/code.less";
+// @import "../bootstrap-3.0.0-wip/less/grid.less";
+@import "../bootstrap-3.0.0-wip/less/grid-noresp.less";	// AY added
 
-// Base CSS
-@import "../bootstrap/less/type.less";
-@import "../bootstrap/less/code.less";
-@import "../bootstrap/less/forms.less";
-@import "../bootstrap/less/tables.less";
+@import "../bootstrap-3.0.0-wip/less/tables.less";
+@import "../bootstrap-3.0.0-wip/less/forms.less";
+@import "../bootstrap-3.0.0-wip/less/buttons.less";
 
 // Components: common
-// @import "../bootstrap/less/sprites.less";		// replaced with Font Awesome:
-@import "../bootstrap/less/font-awesome.less";
-// @import "../bootstrap/less/dropdowns.less";
-// @import "../bootstrap/less/wells.less";
-// @import "../bootstrap/less/component-animations.less";
-// @import "../bootstrap/less/close.less";
-
-// Components: Buttons & Alerts
-@import "../bootstrap/less/buttons.less";
-@import "../bootstrap/less/button-groups.less";
-@import "../bootstrap/less/alerts.less"; // Note: alerts share common CSS with buttons and thus have styles in buttons.less
+@import "../bootstrap-3.0.0-wip/less/component-animations.less";
+@import "../bootstrap-3.0.0-wip/less/input-groups.less";
+@import "../bootstrap-3.0.0-wip/less/dropdowns.less";
+@import "../bootstrap-3.0.0-wip/less/list-group.less";
+@import "../bootstrap-3.0.0-wip/less/panels.less";
+@import "../bootstrap-3.0.0-wip/less/wells.less";
+@import "../bootstrap-3.0.0-wip/less/close.less";
 
 // Components: Nav
-@import "../bootstrap/less/navs.less";
-@import "../bootstrap/less/navbar.less";
-@import "../bootstrap/less/breadcrumbs.less";
-@import "../bootstrap/less/pagination.less";
-@import "../bootstrap/less/pager.less";
+@import "../bootstrap-3.0.0-wip/less/navs.less";
+@import "../bootstrap-3.0.0-wip/less/navbar.less";
+@import "../bootstrap-3.0.0-wip/less/button-groups.less";
+@import "../bootstrap-3.0.0-wip/less/breadcrumbs.less";
+@import "../bootstrap-3.0.0-wip/less/pagination.less";
+@import "../bootstrap-3.0.0-wip/less/pager.less";
 
 // Components: Popovers
-// @import "../bootstrap/less/modals.less";
-// @import "../bootstrap/less/tooltip.less";
-// @import "../bootstrap/less/popovers.less";
+@import "../bootstrap-3.0.0-wip/less/modals.less";
+@import "../bootstrap-3.0.0-wip/less/tooltip.less";
+@import "../bootstrap-3.0.0-wip/less/popovers.less";
 
 // Components: Misc
-// @import "../bootstrap/less/thumbnails.less";
-// @import "../bootstrap/less/media.less";
-// @import "../bootstrap/less/labels-badges.less";
-// @import "../bootstrap/less/progress-bars.less";
-// @import "../bootstrap/less/accordion.less";
-// @import "../bootstrap/less/carousel.less";
-// @import "../bootstrap/less/hero-unit.less";
+@import "../bootstrap-3.0.0-wip/less/alerts.less";
+@import "../bootstrap-3.0.0-wip/less/thumbnails.less";
+@import "../bootstrap-3.0.0-wip/less/media.less";
+@import "../bootstrap-3.0.0-wip/less/labels.less";
+@import "../bootstrap-3.0.0-wip/less/badges.less";
+@import "../bootstrap-3.0.0-wip/less/progress-bars.less";
+@import "../bootstrap-3.0.0-wip/less/accordion.less";
+@import "../bootstrap-3.0.0-wip/less/carousel.less";
+@import "../bootstrap-3.0.0-wip/less/jumbotron.less";
+
+@import "../font-awesome/less/font-awesome.less";
 
 // Utility classes
-@import "../bootstrap/less/utilities.less"; // Has to be last to override when necessary
+@import "../bootstrap-3.0.0-wip/less/utilities.less"; // Has to be last to override when necessary
+// @import "../bootstrap-3.0.0-wip/less/responsive-utilities.less";
 
 // ============================================================================================================
 //
@@ -72,10 +77,12 @@
 @orange: #FD932E;		// Kareo orange
 @green: #249718;		// deep green
 @red: #EE604D;			// deep red
+@red-tii: #CF3C40;
 @beige: #F3EDE0;
 @lightgreen: #B6D99F;	// Snowbird green
 @lightblue: #7FCDE8;	// Snowbird blue
-@link: #0090ff;			// blue
+@blue-tii: #0090ff;
+@link: @blue-tii;			// blue
 
 @black: #222;
 @darkestgray: #333;
@@ -86,6 +93,7 @@
 @lightergray: #ccc;
 @lightestgray: #eee;
 @white: #fff;
+@offwhite: #FCFBF0;
 
 // Typography
 @fontSize: 20px;
@@ -105,18 +113,18 @@
 @padding: 20px;
 
 
-// ============================================================================================================
+// ===========================================================================================================
 //
 // TYPOGRAPHY + FONTS
 // Typekit referenced in footer.php
 //
-// ============================================================================================================
+// ===========================================================================================================
 
 .defaulttype {
 	font-size: @fontSize;
 	color: @black;
 	line-height: @lineHeight;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 
 .alttype {
@@ -129,7 +137,7 @@ body, div, p, input, label {
 }
 
 h1,h2,h3,h4,h5,h6,button {
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	line-height: @lineHeightSmall;
 }
 
@@ -137,7 +145,7 @@ h1 {
 	font-size: 36px;
 	font-weight: 700;
 	text-align: center;
-	text-transform: uppercase;
+	// text-transform: uppercase;
 	margin-top: 40px;
 }
 
@@ -154,19 +162,13 @@ h3 {
 	margin-bottom: @margin;
 }
 
-// nullify Bootstrap's gradients and shadows
-.flatten(@color) {
-  background-color: @color; 
-  background-image: none;
-  background-image: none;
-  background-image: none;
-  background-image: none;
-  background-image: none;
-  background-image: none;
-  background-repeat: no-repeat;
-  filter: none;
-  text-shadow: none;
-  .box-shadow(none);
+h4 {
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+.lead {
+	font-size: @fontSize * 1.4;
 }
 
 // template for buttons (all except the default)
@@ -195,32 +197,18 @@ h3 {
 	}
 }
 
-// ============================================================================================================
+// ===========================================================================================================
 //
 // PAGE-SPECIFIC
 //
-// ============================================================================================================
+// ===========================================================================================================
 
 #home {
-	background: @darkgray;
-	padding-top: @padding * 3;
-	// background: @gray;
+	background: @offwhite;
+	// padding-top: @padding * 3;
 
-	h1 {
-		text-align: left;
-		font-size: 36px;
-		font-weight: 300;
-		margin-top: 0;
-		color: @lightergray;
-
-		strong {
-			font-weight: 900;
-			color: @white;
-		}
-	}
-
-	.projects {
-		margin-top: @padding * 4;
+	#hello {
+		h1 { text-align: left; }
 	}
 }
 
@@ -430,11 +418,11 @@ h3 {
 
 }
 
-// ============================================================================================================
+// ===========================================================================================================
 //
 // COMPONENTS
 //
-// ============================================================================================================
+// ===========================================================================================================
 
 // General tags + classes
 
@@ -443,72 +431,43 @@ a {
 	.transition(border-color 0.5s ease);
 }
 
+.navbar {
+	background-color: @white;
+	.transition(top 0.3s ease-in-out); 
 
-// http://css3.bradshawenterprises.com/flip/
-.card {
-	display: block;
-	margin: 0 @padding;
-	height: @logoWidth;
-	width: @logoWidth;
-	.border-radius(@logoWidth);
-	border: 5px solid @white;
-	text-align: center;
-	background: transparent;
-
-	&.logo {
-	background: @white;
-	border: none;
-			
-		.face {
-			padding-top: 20px;
-			color: @gray;
-
-			&.front { 
-				font-family: 'Gabriela', serif; 
-				font-size: 36px;
-				
-			}
-		}
-	}
-	
-	.face {
-		padding-top: 35px;
-		color: @white;
-		font-weight: 700;
+	&.slideaway {
+		top: -55px;
 	}
 
+	div a, ul li a { border-bottom: none; }
 }
 
-header#nav {
-	position: absolute;
-	top: 0;
-	width: 100%;
-	padding: @padding/2 0;
-	.opacity(50);
-	.transition(opacity 0.6s ease);
 
-	// background-color: rgba(34,34,34,.5);
-
-	&:hover {
-		.opacity(100);
-	}
-
-	a {
-		.linkify(@link, @white);
-		border-bottom: 0;
-		text-shadow: 0 2px rgba(34,34,34,.25);
-	}
-
-	.info { 
-		text-align: right; 
-
-		i { padding-left: @padding; }
-	}
-}
 
 section {
+	height: 560px;
 	padding-top: @padding * 2;
 	padding-bottom: @padding * 2;
+
+	&#hello {
+		height: 720px;
+		padding-top: @padding * 6;
+	}
+
+	&.turnitin-webapp {
+		background-color: @green;
+		h1,h2,h3,h4,div,span,li,p { color: @white; }
+	}
+
+	&.turnitin-ipad {
+		background-color: @blue-tii;
+		h1,h2,h3,h4,div,span,li,p { color: @white; }
+	}
+
+	&.secret {
+		background-color: @black;
+		h1,h2,h3,h4,div,span,li,p { color: @white; }
+	}
 
 	&.intro {
 		text-align: center;
@@ -538,6 +497,26 @@ section {
 	img {
 		margin: @padding auto;
 	}
+
+	a.cover { 
+		display: block;
+		border: 1px solid #fff;
+		.border-radius(150px);
+		margin: 100px auto;
+		width: 200px;
+		height: 200px;
+		text-align: center;
+
+		h1 { 
+			text-align: center; 
+			margin-top: 0;
+		}
+		h4 { 
+			text-align: center;
+			margin-top: 45px;
+		}
+	}
+
 }
 
 .small {
@@ -586,7 +565,6 @@ section {
 .btn {
     .border-radius(20px);
     border: @border;
-    .flatten(@white);
     color: @link;
 
     font-size: @fontSize;

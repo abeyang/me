@@ -18,7 +18,7 @@ c::set('inproduction', false);
 c::set('root', '/me');
 
 c::set('initials', 'kl');
-c::set('name', 'Kareo Labs');
+c::set('name', 'Kareo');
 c::set('profession', 'Medical Billing');
 c::set('location', 'Irvine, CA');
 
