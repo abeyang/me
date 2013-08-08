@@ -30,13 +30,25 @@ $(document).ready(function() {
 	   	// visibility stuff
 	   	if (layers.visible(false) && !layers.hasClass('alreadyplayed')) {
 	   		layers.addClass('alreadyplayed');
-	   		layers.find('img').animate({right:'10%'}, 1000, function() {
-	   			layers.find('.level1').animate({right:'20%'}, 1000, function() {
-	   				layers.find('.level2').animate({right:'30%'}, 1000, function() {
-	   					layers.find('.or').animate({right:'40%'}, 1000, function() {});
-	   				});
-	   			});
-	   		});
+
+	   		layers.children('.base').addClass('breakout').delay(1000).queue(function(nxt) {
+					$(this).children('.level1').addClass('breakout').delay(1000).queue(function(nxt) {
+							$(this).children('.level2').addClass('breakout').delay(1000).queue(function(nxt) {
+									$(this).children('.level3').addClass('breakout');
+									nxt();
+								});
+							nxt();
+						});
+					nxt();
+				});
+	   		
+	   		// layers.find('img').animate({right:'10%'}, 1000, function() {
+	   		// 	layers.find('.level1').animate({right:'20%'}, 1000, function() {
+	   		// 		layers.find('.level2').animate({right:'30%'}, 1000, function() {
+	   		// 			layers.find('.or').animate({right:'40%'}, 1000, function() {});
+	   		// 		});
+	   		// 	});
+	   		// });
 
 	   	}
 	});

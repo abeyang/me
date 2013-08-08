@@ -36,7 +36,14 @@
 			<p><a href="#">Designing for the <?= $com ?> webapp</a> <i class="icon-double-angle-right"></i></p>
 		</div>
 	</div>
-	<hr />
+	<!-- <hr /> -->
+</section>
+
+<section class="blue">
+	adsfadsfasfd
+</section>
+
+<section class="description">
 	<div class="row pad top-15 text-center">
 		<h2 class="col-12">Colors</h2>
 		<p class="col-8 col-offset-2">With three core products colliding into one &mdash; and with the ability to flip on all three at once &mdash; one of the early decisions that I made was to keep each product confined to a primary color space. They're each allowed to have an accent color, but even then, the accent color is locked down to a product.</p>
@@ -45,11 +52,26 @@
 	</div>
 </section>
 
+
+
 <section class="lightgray layers">
-	<img class="base" src="tii-layer-base.png" />
-	<img class="pm level1" src="tii-layer-pm.png" />
-	<img class="gm level1 level2" src="tii-layer-gm.png" />
-	<img class="or level1 level2" src="tii-layer-or.png" />
+	<div class="container pad top-30">
+		<h2>One mode. Three states.</h2>
+		<p>yada</p>
+	</div>
+	
+	<div class="abs base">
+		<img src="tii-layer-base.png" />
+		<div class="abs level1">
+			<img src="tii-layer-pm.png" />
+			<div class="abs level2">
+				<img src="tii-layer-gm.png" />
+				<div class="abs level3">
+					<img src="tii-layer-or.png" />			
+				</div>
+			</div>
+		</div>
+	</div>
 	
 </section>
 

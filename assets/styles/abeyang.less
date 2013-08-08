@@ -23,9 +23,9 @@
 // @import "../bootstrap-3.0.0-wip/less/grid.less";
 @import "../bootstrap-3.0.0-wip/less/grid-noresp.less";	// AY added
 
-@import "../bootstrap-3.0.0-wip/less/tables.less";
-@import "../bootstrap-3.0.0-wip/less/forms.less";
-@import "../bootstrap-3.0.0-wip/less/buttons.less";
+// @import "../bootstrap-3.0.0-wip/less/tables.less";
+// @import "../bootstrap-3.0.0-wip/less/forms.less";
+// @import "../bootstrap-3.0.0-wip/less/buttons.less";
 
 // Components: common
 @import "../bootstrap-3.0.0-wip/less/component-animations.less";
@@ -45,20 +45,20 @@
 @import "../bootstrap-3.0.0-wip/less/pager.less";
 
 // Components: Popovers
-@import "../bootstrap-3.0.0-wip/less/modals.less";
-@import "../bootstrap-3.0.0-wip/less/tooltip.less";
-@import "../bootstrap-3.0.0-wip/less/popovers.less";
+// @import "../bootstrap-3.0.0-wip/less/modals.less";
+// @import "../bootstrap-3.0.0-wip/less/tooltip.less";
+// @import "../bootstrap-3.0.0-wip/less/popovers.less";
 
 // Components: Misc
-@import "../bootstrap-3.0.0-wip/less/alerts.less";
-@import "../bootstrap-3.0.0-wip/less/thumbnails.less";
-@import "../bootstrap-3.0.0-wip/less/media.less";
-@import "../bootstrap-3.0.0-wip/less/labels.less";
-@import "../bootstrap-3.0.0-wip/less/badges.less";
-@import "../bootstrap-3.0.0-wip/less/progress-bars.less";
-@import "../bootstrap-3.0.0-wip/less/accordion.less";
-@import "../bootstrap-3.0.0-wip/less/carousel.less";
-@import "../bootstrap-3.0.0-wip/less/jumbotron.less";
+// @import "../bootstrap-3.0.0-wip/less/alerts.less";
+// @import "../bootstrap-3.0.0-wip/less/thumbnails.less";
+// @import "../bootstrap-3.0.0-wip/less/media.less";
+// @import "../bootstrap-3.0.0-wip/less/labels.less";
+// @import "../bootstrap-3.0.0-wip/less/badges.less";
+// @import "../bootstrap-3.0.0-wip/less/progress-bars.less";
+// @import "../bootstrap-3.0.0-wip/less/accordion.less";
+// @import "../bootstrap-3.0.0-wip/less/carousel.less";
+// @import "../bootstrap-3.0.0-wip/less/jumbotron.less";
 
 // 3rd-Party Plugins
 @import "../bootstrap-3.0.0-wip/less/retina.less";
@@ -497,13 +497,16 @@ section {
 	}
 
 	&.layers {
-		// position: absolute;
-		padding: 0;
+		position: relative;
+		// padding: 0;
 
-		img {
+		.abs {
 			position: absolute;
 			right: -5px;
-			margin-top: 0;
+			top: -10px;
+			.transition(right 0.5s ease-in-out); 
+
+			&.breakout { right: 10%; }
 		}
 	}
 
@@ -590,68 +593,6 @@ section {
 		background-color: @white; 
 		border-left: 1px solid #333;
 		border-right: 1px solid #333;
-	}
-}
-
-
-// Form Elements
-
-.btn {
-    .border-radius(20px);
-    border: @border;
-    color: @link;
-
-    font-size: @fontSize;
-    // font-weight: 600;
-    
-    .transition(background-color 0.3s linear);
-    
-    &:hover {
-	    color: lighten(@link, 10);
-	    border-color: darken(#ddd, 7);
-	    background-color: @white;
-    }
-    &:active {
-	    .box-shadow(none);
-    }
-    
-   	&.btn-large i {
-
-   		&.pull-left {
-   			margin-top: 3px;
-   			margin-left: @padding/2;
-   		}
-
-   		&.pull-right {
-	   		margin-top: 3px;
-   			margin-right: @padding/2;
-   		}
-   	}
-    
-}
-
-.btn-primary { .buttonify(@link); }
-.btn-success { .buttonify(@green); }
-.btn-danger { .buttonify(@red); }
-
-input { 
-
-	&[type='text'], &[type='password'] {
-		.border-radius(3px);
-		border: @border;
-		.box-shadow(none);
-	}
-      
-	&[type='radio'], &[type='checkbox'] {
-		margin-top: 2px;
-		margin-right: @margin;
-	}
-}
-
-label { 
-	input[type='text'] { 
-		margin-left: @margin; 
-		margin-bottom: 0;
 	}
 }
 
