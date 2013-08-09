@@ -13,10 +13,6 @@
 	</div>
 </section>
 
-<!-- <section class="thin">
-	&nbsp;
-</section> -->
-
 <section class="description container">
 	<div class="row">
 		<div class="col-4 col-offset-2">
@@ -31,7 +27,6 @@
 			<p>...</p>
 		</div>
 	</div>
-	<!-- <hr /> -->
 </section>
 
 <section class="blue">

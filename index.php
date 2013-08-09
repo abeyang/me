@@ -12,14 +12,14 @@
 			<div class="col-4">
 				<h1>Hello!</h1>
 				<p class="lead">My name is <?= c::get('name') ?>, and I'm a <?= c::get('profession') ?> living near <?= c::get('location') ?>. </p>
-				<p>I design for interactions across screens, whether it's for the <a href="#">web</a> or for <a href="#">iOS devices</a>. I design for simplicity, for ease-of-use, and for beauty. But enough talk &mdash; take a look at the case studies below!</p>
+				<p>I design for <a href="#">interactions across screens</a>, whether it's for the <a href="case-study/turnitin-webapp">web</a> or for <a href="case-study/turnitin-ipad">iOS devices</a>. I design for simplicity, for ease-of-use, and for beauty. But enough talk &mdash; take a look at the case studies below!</p>
 			</div>
 		</div>		
 	</section>
 
 	<? foreach ($cases as $case) { ?>
 
-	<section class="<?= a::get($case, 'class'); ?>">
+	<section class="hero <?= a::get($case, 'class'); ?>">
 		<a href="case-study/<?= a::get($case, 'class'); ?>/" class="cover">
 			<h4><?= a::get($case, 'company'); ?></h4>
 			<h1><?= a::get($case, 'short'); ?></h1>

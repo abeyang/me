@@ -20,14 +20,16 @@ if (c::get('inproduction'))
 else c::set('root', '/me');
 
 c::set('name', 'Abe Yang');
-c::set('profession', 'Product Designer');
+c::set('profession', 'UX Designer');
 c::set('location', 'Irvine, CA');
+c::set('email', 'abeyang@gmail.com');
 
 // Portfolio / Case Study logic
 
 g::set('cases', array(
 	array('id'=>'webapp', 'title'=>'Webapp Design', 'subtitle'=>'Consolidating three products into one', 'short'=>'Webapp', 'company'=>'Turnitin', 'class'=>'turnitin-webapp'),
-	array('id'=>'ipad', 'title'=>'iPad Design', 'subtitle'=>'Bringing the flagship product to the iPad', 'short'=>'iPad', 'company'=>'Turnitin', 'class'=>'turnitin-ipad')
+	array('id'=>'ipad', 'title'=>'iPad Design', 'subtitle'=>'Bringing the flagship product to the iPad', 'short'=>'iPad', 'company'=>'Turnitin', 'class'=>'turnitin-ipad'),
+	array('id'=>'explore', 'title'=>'Explorations', 'subtitle'=>'Design explorations and prototypes', 'short'=>'Explore', 'company'=>'Kareo', 'class'=>'kareo-explore')
 ));
 
 // <head> info
