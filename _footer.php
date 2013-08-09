@@ -13,21 +13,23 @@ $(document).ready(function() {
 		// http://stackoverflow.com/questions/4326845/how-can-i-determine-the-direction-of-a-jquery-scroll-event
 
 		var st = $(this).scrollTop();
-
-	   	if (st > lastScrollTop) {
-	       // downscroll code
-			if (!navbar.hasClass('slideaway')) {
-				navbar.addClass('slideaway');
-			}
-	   	} else {
-	      // upscroll code
-	    	if (navbar.hasClass('slideaway')) {
-				navbar.removeClass('slideaway');
-			}
+	   	
+	   	if (st > 50) {
+   			if (st > lastScrollTop) {
+   		       // downscroll code
+   				if (!navbar.hasClass('slideaway')) {
+   					navbar.addClass('slideaway');
+   				}
+   		   	} else {
+   		      // upscroll code
+   		    	if (navbar.hasClass('slideaway')) {
+   					navbar.removeClass('slideaway');
+   				}
+   		   	}
 	   	}
-	   	lastScrollTop = st;
-	   	// console.log(lastScrollTop);
 
+	   	lastScrollTop = st;
+	   	
 	   	// visibility stuff
 	   	if (layers.length) {
    		   	if (layers.visible(false) && !layers.hasClass('alreadyplayed')) {

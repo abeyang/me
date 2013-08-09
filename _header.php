@@ -3,6 +3,15 @@
 require_once('assets/php/kirby.php');
 require_once('_CONFIG.php');
 
+$cases = g::get('cases');
+
+// first $index has to be 1, not 0
+if ($index) {
+	$case = $cases[$index-1];
+	$id = a::get($case, 'id');
+	$title = a::get($case, 'title');
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -22,8 +31,6 @@ require_once('_CONFIG.php');
 
 	<!-- Using Open Sans: http://www.google.com/fonts#UsePlace:use/Collection:Open+Sans -->
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-
-<!-- 	<link rel="stylesheet" type="text/css" href="<?= url('/assets/styles/animate.min.css') ?>" /> -->
 
 	<?  $inproduction = c::get('inproduction');
 		if ($inproduction): 
@@ -52,12 +59,12 @@ require_once('_CONFIG.php');
 	    <div class="container">
 	        <div class="row">
 	        	<div class="col-8">
-	        		<a class="navbar-brand" href="#"><?= c::get('name'); ?></a>
+	        		<a class="navbar-brand" href="<?= url(); ?>"><?= c::get('name'); ?></a>
 	        	</div>
 	            <ul class="nav navbar-nav col-4 pull-right">
-	              <li><a href="#">Home</a></li>
-	              <li><a href="#">Link</a></li>
-	              <li><a href="#">Link</a></li>
+	              <li><a href="<?= url(); ?>">Home</a></li>
+	              <li><a href="#">Resume</a></li>
+	              <li><a href="#">Contact</a></li>
 	            </ul>              
 	        </div>
 	    </div>

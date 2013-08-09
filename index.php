@@ -4,31 +4,32 @@
 	require_once('_header.php');
 ?>
 
-<!-- <div class="container"> -->
 	<section id="hello">
 		<div class="row">
-			<div class="col-8 col-offset-2">
+			<div class="col-2 col-offset-3">
+				<img id="logo" src="assets/img/ay-brand-large.png" alt="Abe Yang" width="234px"/>
+			</div>
+			<div class="col-4">
 				<h1>Hello!</h1>
-				<p class="lead">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.</p>
-				<p>Hi, this is <strong><?= c::get('name') ?></strong>. <br />
-			We do <strong><?= c::get('profession') ?></strong> and we're located in <strong><?= c::get('location') ?></strong>.</p>
+				<p class="lead">My name is <?= c::get('name') ?>, and I'm a <?= c::get('profession') ?> living near <?= c::get('location') ?>. </p>
+				<p>I design for interactions across screens, whether it's for the <a href="#">web</a> or for <a href="#">iOS devices</a>. I design for simplicity, for ease-of-use, and for beauty. But enough talk &mdash; take a look at the case studies below!</p>
 			</div>
 		</div>		
 	</section>
-	<section class="turnitin-webapp">
-		<a href="case-study/turnitin-webapp/" class="cover">
-			<h4>Turnitin</h4>
-			<h1>Web app</h1>
+
+	<? foreach ($cases as $case) { ?>
+
+	<section class="<?= a::get($case, 'class'); ?>">
+		<a href="case-study/<?= a::get($case, 'class'); ?>/" class="cover">
+			<h4><?= a::get($case, 'company'); ?></h4>
+			<h1><?= a::get($case, 'short'); ?></h1>
 			<p>View case study</p>
 		</a>	
 	</section>
-	<section class="turnitin-ipad">
-		<a href="#" class="cover">
-			<h4>Turnitin</h4>
-			<h1>iPad app</h1>
-			<p>View case study</p>
-		</a>	
-	</section>
+
+	<? } // end foreach ?>
+
+<!-- 	
 	<section class="secret">
 		<div class="row">
 			<a href="#" class="cover">
@@ -47,8 +48,6 @@
 			</div>
 		</div>		
 	</section>
-
-<!-- </div> -->
-
+ -->
 
 <? require_once('_footer.php') ?>

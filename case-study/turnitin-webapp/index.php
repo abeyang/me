@@ -1,39 +1,34 @@
 <? 
-	$title = 'Web app Design';
-	$id = 'webapp';
-	$com = 'Turnitin';
+	$index = 1;
 
 	require_once('../../_header.php');
-	// require_once('../../nav.php');
 ?>
 
-<!--<script type="text/javascript" src="<?= url('/assets/js/jquery.transit.min.js') ?>"></script>-->
-
-<section class="turnitin-webapp intro thin">
+<section class="intro">
 	<div class="container">
 		<h1><?= $title ?></h1>
-		<div class="subtitle">Consolidating three products into one</div>
+		<p class="subtitle"><?= a::get($case, 'subtitle') ?></p>
 
 		<img src="hero.png" alt="Main screenshot" />
 	</div>
 </section>
 
-<section class="thin">
+<!-- <section class="thin">
 	&nbsp;
-</section>
+</section> -->
 
 <section class="description container">
 	<div class="row">
 		<div class="col-4 col-offset-2">
 			<h2 >About this project</h2>
 			<p>
-				It was quite a challenge to even begin thinking about porting over the webapp into the iPad. The webapp is much more mature and <a href="#">combines three core products into one</a>; there's no way we can cram all that into the iPad &mdash; at least, not for the initial release.				
+				There was a great need to ...
 			</p>
 		</div>
 		
 		<div class="col-4">
 			<h2>My role</h2>
-			<p><a href="#">Designing for the <?= $com ?> webapp</a> <i class="icon-double-angle-right"></i></p>
+			<p>...</p>
 		</div>
 	</div>
 	<!-- <hr /> -->

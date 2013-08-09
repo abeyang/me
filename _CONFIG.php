@@ -15,12 +15,20 @@ c::set('inproduction', false);
 // by default, root is '/'
 // set root to /this/is/my/root
 // c::set('root', '/');
-c::set('root', '/me');
+if (c::get('inproduction')) 
+	 c::set('root', '/');
+else c::set('root', '/me');
 
-c::set('initials', 'kl');
-c::set('name', 'Kareo');
-c::set('profession', 'Medical Billing');
+c::set('name', 'Abe Yang');
+c::set('profession', 'Product Designer');
 c::set('location', 'Irvine, CA');
+
+// Portfolio / Case Study logic
+
+g::set('cases', array(
+	array('id'=>'webapp', 'title'=>'Webapp Design', 'subtitle'=>'Consolidating three products into one', 'short'=>'Webapp', 'company'=>'Turnitin', 'class'=>'turnitin-webapp'),
+	array('id'=>'ipad', 'title'=>'iPad Design', 'subtitle'=>'Bringing the flagship product to the iPad', 'short'=>'iPad', 'company'=>'Turnitin', 'class'=>'turnitin-ipad')
+));
 
 // <head> info
 
@@ -35,7 +43,7 @@ c::set('keywords', 'Cum sociis natoque penatibus et magnis dis parturient montes
 // core functions
 
 // takes root into account
-function url($url) {
+function url($url = '') {
 	return c::get('root') . $url;
 }
 

@@ -242,32 +242,49 @@ h4 {
 #webapp {
 	a { .linkify(@green); }
 
-	.navbar { .navify(darken(@green-tii,5), @white); }
-}
+	.navbar { 
+		.navify(darken(@green-tii,5), @white); 
 
-#prototyping {
-	h2 { color: @orange; }
-	
-	a { .linkify(@orange); }
-
-	#typer {
-		color: @orange;
-		.alttype;
-	}
-
-	.spec {
-		height: 500px;
-		background: #fafafa url(../../assets/img/prototype-spec.png) bottom center no-repeat;
-	}
-
-	.video {
-		.subtitle {
-			color: darken(@orange, 15);
+		.navbar-brand {
+			.at2x('../../assets/img/ay-brand-white.png', 47px, 30px);
 		}
+	}
 
-		a { .linkify(@orange, @gray); }
+	.intro {
+		background: @green-tii; /* Old browsers */
+		background: -moz-linear-gradient(top, @green-tii 55%, @white 55%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(55%,@green-tii), color-stop(55%,@white)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, @green-tii 55%,@white 55%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, @green-tii 55%,@white 55%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, @green-tii 55%,@white 55%); /* IE10+ */
+		background: linear-gradient(to bottom, @green-tii 55%,@white 55%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@green-tii', endColorstr='@white',GradientType=0 ); /* IE6-9 */
 	}
 }
+
+// #prototyping {
+// 	h2 { color: @orange; }
+	
+// 	a { .linkify(@orange); }
+
+// 	#typer {
+// 		color: @orange;
+// 		.alttype;
+// 	}
+
+// 	.spec {
+// 		height: 500px;
+// 		background: #fafafa url(../../assets/img/prototype-spec.png) bottom center no-repeat;
+// 	}
+
+// 	.video {
+// 		.subtitle {
+// 			color: darken(@orange, 15);
+// 		}
+
+// 		a { .linkify(@orange, @gray); }
+// 	}
+// }
 
 #ipad {
 	.small {
@@ -275,21 +292,31 @@ h4 {
 		ol { margin-left: 16px; }
 	}
 
+	.navbar { 
+		.navify(darken(@link,5), @white); 
+
+		.navbar-brand {
+			.at2x('../../assets/img/ay-brand-white.png', 47px, 30px);
+		}
+	}
+
+	.intro {
+		background: @link; /* Old browsers */
+		background: -moz-linear-gradient(top, @link 55%, @white 55%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(55%,@link), color-stop(55%,@white)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, @link 55%,@white 55%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, @link 55%,@white 55%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, @link 55%,@white 55%); /* IE10+ */
+		background: linear-gradient(to bottom, @link 55%,@white 55%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@link', endColorstr='@white',GradientType=0 ); /* IE6-9 */
+	}
+
 	.sketch {
-		height: 700px;
-		background: @beige url(../../assets/img/ipad-sketches.jpg) center center no-repeat;
+		height: 900px;
+		background: @beige url(../../assets/img/ipad-sketches.jpg) center bottom no-repeat;
 		border-top: 1px solid @lightergray;
 		border-bottom: 1px solid @lightergray;
 
-		.slug {
-			.alttype;
-			color: @white;
-			background-color: rgba(34,34,34,.75);
-			width: 500px;
-			padding: 10px 25px;
-			margin: 200px auto 0;
-			.opacity(0);
-		}
 	}
 
 	.hifi {
@@ -341,7 +368,16 @@ a {
 	&.slideaway {
 		top: -55px;
 	}
+
+	.navbar-brand {
+		.at2x('../../assets/img/ay-brand.png', 47px, 30px);
+		background-position: left center;
+		background-repeat:no-repeat;
+		padding-left: 60px;
+	}
 }
+
+#logo { margin-top: 100px; }
 
 section {
 	// height: @section-height;
@@ -374,11 +410,12 @@ section {
 
 	&.intro {
 		text-align: center;
+		h1,p { color: @white; }
 	}
 
-	&.description {
-		height: auto;
-	}
+	// &.description {
+	// 	height: auto;
+	// }
 
 	&.layers {
 		position: relative;
@@ -443,11 +480,11 @@ section {
 }
 
 .small {
-	p, div, li {
-		font-size: @fontSizeSmall;
-		color: @gray;
-	}
+	font-size: @fontSizeSmall;
+	color: @gray;
+
 	h3 { color: @darkgray; }
+	p { font-size: @fontSizeSmall; }
 }
 
 // used for videos (780px)
