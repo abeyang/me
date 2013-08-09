@@ -54,7 +54,7 @@ require_once('_CONFIG.php');
 	        	<div class="col-8">
 	        		<a class="navbar-brand" href="#"><?= c::get('name'); ?></a>
 	        	</div>
-	            <ul class="nav navbar-nav col-4">
+	            <ul class="nav navbar-nav col-4 pull-right">
 	              <li><a href="#">Home</a></li>
 	              <li><a href="#">Link</a></li>
 	              <li><a href="#">Link</a></li>

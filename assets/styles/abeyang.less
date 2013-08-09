@@ -205,23 +205,44 @@ h4 {
 	}
 }
 
+// template for navbar
+.navify(@basecolor, @fontcolor) {
+	background-color: @basecolor;
+	div a, ul li a { 
+		border-bottom: none; 
+		color: @fontcolor;
+		font-size: @fontSizeSmall;
+	}
+}
+
 // ===========================================================================================================
 //
 // PAGE-SPECIFIC
 //
 // ===========================================================================================================
 
+@section-height: 560px;
+@section-height-tall: 720px;
+@section-height-thin: 340px;
+
 #home {
 	background: @offwhite;
-	// padding-top: @padding * 3;
 
-	#hello {
-		h1 { text-align: left; }
+	.navbar { .navify(@white, @black); }
+
+	section { 
+		height: @section-height; 
+
+		&#hello {
+			h1 { text-align: left; }
+		}
 	}
 }
 
 #webapp {
 	a { .linkify(@green); }
+
+	.navbar { .navify(darken(@green-tii,5), @white); }
 }
 
 #prototyping {
@@ -291,141 +312,12 @@ h4 {
 			height: 655px;	
 		}
 
-		section {
-			-webkit-transform: none;
-			-moz-transform: none;
-			-ms-transform: none;
-			-o-transform: none;
-			transform: none;
-			background: #c0c0c0;
-			width: 512px;
-			height: 665px;
-			// height: 380px;
-			position: absolute;
-			// top: 50%;
-			left: 50%;
-			padding: 0;
-			margin-left: -256px;
-			margin-top: 119px;
-			// margin-top: -220px;
-			opacity: 0;
-
-			&.bespoke-slide {
-				// .transition(~"transform .7s ease, opacity .7s ease, background-color .7s ease");
-				-webkit-transition: -webkit-transform .7s ease, opacity .7s ease, background-color .7s ease;
-				-moz-transition: -moz-transform .7s ease, opacity .7s ease, background-color .7s ease;
-				-ms-transition: -ms-transform .7s ease, opacity .7s ease, background-color .7s ease;
-				-o-transition: -o-transform .7s ease, opacity .7s ease, background-color .7s ease;
-				transition: transform .7s ease, opacity .7s ease, background-color .7s ease;
-			}
-
-			&.bespoke-active {
-				opacity: 1;
-				z-index: 1;
-			}
-
-			img {
-				margin: 0;
-			}
-		}
 	}
 
 	.footer {
 		height: 500px;
 		background-color: @white;
 		z-index: 10;
-	}
-
-	/* Bespoke: Classic Theme */
-	.classic {
-		background: rgba(243, 111, 86, 0.2) url(../../assets/img/ipad-frame.png) center 150px no-repeat;
-
-		// section, .arrow:hover { background: rgb(243, 111, 86); }
-		a { color: rgb(243, 111, 86); }
-
-		section {
-			&.bespoke-before {
-				.translate3d(-1920px, 0, 0);
-			}
-			&.bespoke-before-2 {
-				.translate3d(-1280px, 0, 0);
-				.opacity(10);
-			}
-			&.bespoke-before-1 {
-				.translate3d(-640px, 0, 0);
-				.opacity(30);
-			}
-			&.bespoke-after {
-				.translate3d(1920px, 0, 0);
-			}
-			&.bespoke-after-2 {
-				.translate3d(1280px, 0, 0);
-				.opacity(10);
-			}
-			&.bespoke-after-1 {
-				.translate3d(640px, 0, 0);
-				.opacity(30);
-			}
-		}
-	}
-
-	/* Bespoke: Carousel Theme */
-	.carousel {
-		background: rgba(121, 255, 0, 0.2) url(../../assets/img/ipad-frame.png) center 150px no-repeat;
-
-		// section, .arrow:hover { background: rgb(131, 199, 69); }
-		a { color: rgb(131, 199, 69); }
-
-		section {
-			&.bespoke-before {
-				-webkit-transform: translateX(-980px) rotateY(-72deg) translateX(-1290px);
-				-moz-transform: translateX(-980px) rotateY(-72deg) translateX(-1290px);
-				-ms-transform: translateX(-980px) rotateY(-72deg) translateX(-1290px);
-				-o-transform: translateX(-980px) rotateY(-72deg) translateX(-1290px);
-				transform: translateX(-980px) rotateY(-72deg) translateX(-1290px);
-				opacity: 0;
-			}
-			&.bespoke-before-2 {
-				-webkit-transform: translateX(-590px) rotateY(-52deg) translateX(-780px);
-				-moz-transform: translateX(-590px) rotateY(-52deg) translateX(-780px);
-				-ms-transform: translateX(-590px) rotateY(-52deg) translateX(-780px);
-				-o-transform: translateX(-590px) rotateY(-52deg) translateX(-780px);
-				transform: translateX(-590px) rotateY(-52deg) translateX(-780px);
-				opacity: 0.15;
-			}
-			&.bespoke-before-1 {
-				-webkit-transform: translateX(-270px) rotateY(-30deg) translateX(-290px);
-				-moz-transform: translateX(-270px) rotateY(-30deg) translateX(-290px);
-				-ms-transform: translateX(-270px) rotateY(-30deg) translateX(-290px);
-				-o-transform: translateX(-270px) rotateY(-30deg) translateX(-290px);
-				transform: translateX(-270px) rotateY(-30deg) translateX(-290px);
-				opacity: 0.3;
-			}
-			&.bespoke-after {
-				-webkit-transform: translateX(980px) rotateY(72deg) translateX(1290px);
-				-moz-transform: translateX(980px) rotateY(72deg) translateX(1290px);
-				-ms-transform: translateX(980px) rotateY(72deg) translateX(1290px);
-				-o-transform: translateX(980px) rotateY(72deg) translateX(1290px);
-				transform: translateX(980px) rotateY(72deg) translateX(1290px);
-				opacity: 0;
-			}
-			&.bespoke-after-1 {
-				-webkit-transform: translateX(270px) rotateY(30deg) translateX(290px);
-				-moz-transform: translateX(270px) rotateY(30deg) translateX(290px);
-				-ms-transform: translateX(270px) rotateY(30deg) translateX(290px);
-				-o-transform: translateX(270px) rotateY(30deg) translateX(290px);
-				transform: translateX(270px) rotateY(30deg) translateX(290px);
-				opacity: 0.3;
-			}
-			&.bespoke-after-2 {
-				-webkit-transform: translateX(590px) rotateY(52deg) translateX(780px);
-				-moz-transform: translateX(590px) rotateY(52deg) translateX(780px);
-				-ms-transform: translateX(590px) rotateY(52deg) translateX(780px);
-				-o-transform: translateX(590px) rotateY(52deg) translateX(780px);
-				transform: translateX(590px) rotateY(52deg) translateX(780px);
-				opacity: 0.15;
-			}			
-		}
 	}
 
 }
@@ -444,23 +336,15 @@ a {
 }
 
 .navbar {
-	background-color: @white;
 	.transition(top 0.3s ease-in-out); 
 
 	&.slideaway {
 		top: -55px;
 	}
-
-	div a, ul li a { border-bottom: none; }
 }
 
-
-@section-height: 560px;
-@section-height-tall: 720px;
-@section-height-thin: 340px;
-
 section {
-	height: @section-height;
+	// height: @section-height;
 	padding-top: @padding * 2;
 	padding-bottom: @padding * 2;
 
@@ -498,6 +382,7 @@ section {
 
 	&.layers {
 		position: relative;
+		height: @section-height;
 		// padding: 0;
 
 		.abs {
@@ -533,6 +418,7 @@ section {
 
 	img {
 		margin: @padding auto;
+		max-width: auto;
 	}
 
 	a.cover { 
@@ -562,23 +448,6 @@ section {
 		color: @gray;
 	}
 	h3 { color: @darkgray; }
-}
-
-.center {
-	text-align: center;
-}
-
-.goodbad {
-	list-style: none;
-
-	i { 
-		float: left;
-		margin-top: 3px;
-		margin-left: -25px; 
-		.opacity(50); 
-	}
-	&.good i { color: @green; }
-	&.bad i { color: @red; }
 }
 
 // used for videos (780px)

@@ -5,7 +5,7 @@ $(document).ready(function() {
 
 	var lastScrollTop = 0;
 	var navbar = $('.navbar');
-	var layers = $('#webapp .layers');
+	layers = $('#webapp .layers');
 	
 	$(window).scroll(function(event){
 	   
@@ -26,12 +26,14 @@ $(document).ready(function() {
 			}
 	   	}
 	   	lastScrollTop = st;
+	   	// console.log(lastScrollTop);
 
 	   	// visibility stuff
-	   	if (layers.visible(false) && !layers.hasClass('alreadyplayed')) {
-	   		layers.addClass('alreadyplayed');
+	   	if (layers.length) {
+   		   	if (layers.visible(false) && !layers.hasClass('alreadyplayed')) {
+   		   		layers.addClass('alreadyplayed');
 
-	   		layers.children('.base').addClass('breakout').delay(1000).queue(function(nxt) {
+   		   		layers.children('.base').addClass('breakout').delay(1000).queue(function(nxt) {
 					$(this).children('.level1').addClass('breakout').delay(1000).queue(function(nxt) {
 							$(this).children('.level2').addClass('breakout').delay(1000).queue(function(nxt) {
 									$(this).children('.level3').addClass('breakout');
@@ -41,16 +43,9 @@ $(document).ready(function() {
 						});
 					nxt();
 				});
-	   		
-	   		// layers.find('img').animate({right:'10%'}, 1000, function() {
-	   		// 	layers.find('.level1').animate({right:'20%'}, 1000, function() {
-	   		// 		layers.find('.level2').animate({right:'30%'}, 1000, function() {
-	   		// 			layers.find('.or').animate({right:'40%'}, 1000, function() {});
-	   		// 		});
-	   		// 	});
-	   		// });
-
+   		   	}
 	   	}
+
 	});
 	
 
