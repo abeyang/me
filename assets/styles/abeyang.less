@@ -177,6 +177,8 @@ h4 {
 .pad {
 	&.top-15 { padding-top: 15px; }
 	&.top-30 { padding-top: 30px; }
+	&.top-60 { padding-top: 60px; }
+	&.top-120 { padding-top: 120px; }
 }
 
 // template for buttons (all except the default)
@@ -320,17 +322,19 @@ h4 {
 	}
 
 	.spec {
-		height: 1500px;
+		height: 1350px;
 		.at2x('../../case-study/kareo-explore/explore-spec2.png', 1165px, 468px);
 		background-position: center bottom;
 		background-repeat:no-repeat;
 	}
 
 	.video {
-		.subtitle {
-			color: darken(@orange, 15);
-		}
-
+		height: 1200px;
+		
+		.at2x('../../case-study/kareo-explore/hero.png', 1146px, 693px);
+		background-position: right 600px;
+		background-repeat: no-repeat;
+	
 		a { .linkify(@orange, @gray); }
 	}
 }
@@ -420,6 +424,11 @@ section {
 
 	&.kareo-explore {
 		background-color: @orange;
+		.at2x('../../case-study/kareo-explore/hero.png', 1146px, 693px);
+		a.cover { 
+			background-color: @orange; 
+			border-color: darken(@orange, 10);
+		}
 	}
 
 	&.thin {

@@ -29,6 +29,15 @@
 
 	<? } // end foreach ?>
 
+	<section>
+		<div class="row pad top-120">
+			<div class="col-12 text-center">
+				<h2>That's all folks!</h2>
+				<p>More designs and case studies will be coming soon!</p>
+			</div>
+		</div>		
+	</section>
+
 <!-- 	
 	<section class="secret">
 		<div class="row">
