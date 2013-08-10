@@ -1,7 +1,12 @@
 <script type="text/javascript">
 
-// TODO: need to move to separate file later
 $(document).ready(function() {
+
+	<? if ($inproduction): ?>
+	mixpanel.track(<?= $title ?>);
+	mixpanel.track_links('link-resume', 'clicked Resume');
+	mixpanel.track_links('link-contact', 'clicked Contact');
+	<? endif ?>
 
 	var lastScrollTop = 0;
 	var navbar = $('.navbar');

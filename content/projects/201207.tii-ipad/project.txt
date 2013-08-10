@@ -1,9 +1,0 @@
-title: TII for iPad
--
-date: July 2012
--
-fields: iPad, UX design, interaction
--
-content: 
-
-Not only did we want to design a beautiful product, but a big challenge was keeping all the different interactions in check (eg: tapping on paper vs. tapping on a mark). Moreover, we wanted the iPad product to be feature-rich, yet at the same time, to have the semblence of being lean.

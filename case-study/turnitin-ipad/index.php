@@ -4,9 +4,6 @@
 	require_once('../../_header.php');
 ?>
 
-<script type="text/javascript" src="<?= url('/assets/js/jquery.transit.min.js') ?>"></script>
-<script type="text/javascript" src="<?= url('/assets/js/bespoke.js') ?>"></script>
-
 <section class="blue intro">
 	<div class="container">
 		<h1><?= $title ?></h1>
@@ -20,7 +17,7 @@
 	<div class="row">		
 		<h2 class="text-center">About this project</h2>
 		<p class="col-6 col-offset-2">
-			It was quite a challenge to even begin thinking about porting over the webapp into the iPad. The webapp is much more mature and <a href="#">combines three core products into one</a>. Thus, for the initial release of the iPad app, we focused only on the grading capability.
+			It was quite a challenge to even begin thinking about porting over the webapp into the iPad. The webapp is much more mature and <a href="../turnitin-webapp/">combines three core products into one</a>. Thus, for the initial release of the iPad app, we focused only on the grading capability.
 		</p>
 		<div class="col-3 small">
 			<h3>Related</h3>

@@ -4,7 +4,7 @@
 	require_once('../../_header.php');
 ?>
 
-<script type="text/javascript" src="<?= url('/assets/js/video.min.js') ?>"></script>
+<script type="text/javascript" src="<?= url('assets/js/video.min.js') ?>"></script>
 
 <section class="intro">
 	<div class="container">
@@ -68,10 +68,13 @@
 
 		<hr />
 
-		<div class="row mockup pad top-15">
+		<div class="row pad top-15">
 			<div class="col-3">
 				<h2>Round 4</h2>
 				<p>Similar to Round 2, this was prototyped with HTML, CSS, and javascript. However, unlike Round 2, the point of this prototype was to show a bit of <strong>delightfulness</strong>; using a mixture of CSS3 and JQuery chaining events, certain portions of the UI move and animate based on specific actions.</p>
+			</div>
+			<div class="col-9">
+				<img src="hero.png" alt="Final Round of Kareo Explorations" />
 			</div>
 		</div>
 			

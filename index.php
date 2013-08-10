@@ -1,20 +1,22 @@
 <? 
-	$title = 'Welcome';
+	$title = 'Portfolio';
 	$id = 'home';
 	require_once('_header.php');
 ?>
 
 	<section id="hello">
-		<div class="row">
-			<div class="col-2 col-offset-3">
-				<img id="logo" src="assets/img/ay-brand-large.png" alt="Abe Yang" width="234px"/>
-			</div>
-			<div class="col-4">
-				<h1>Hello!</h1>
-				<p class="lead">My name is <?= c::get('name') ?>, and I'm a <?= c::get('profession') ?> living near <?= c::get('location') ?>. </p>
-				<p>I design for <a href="#">interactions across screens</a>, whether it's for the <a href="case-study/turnitin-webapp">web</a> or for <a href="case-study/turnitin-ipad">iOS devices</a>. I design for simplicity, for ease-of-use, and for beauty. But enough talk &mdash; take a look at the case studies below!</p>
-			</div>
-		</div>		
+		<div class="container">
+			<div class="row">
+				<div class="col-2 col-offset-3">
+					<img id="logo" src="assets/img/ay-brand-large.png" alt="Abe Yang" />
+				</div>
+				<div class="col-4">
+					<h1>Hello!</h1>
+					<p class="lead">My name is <?= c::get('name') ?>, and I'm a <?= c::get('profession') ?> living near <?= c::get('location') ?>. </p>
+					<p>I design for <a href="case-study/kareo-explore">interactions across screens</a>, whether it's for the <a href="case-study/turnitin-webapp">web</a> or for <a href="case-study/turnitin-ipad">iOS devices</a>. I design for simplicity, for ease-of-use, and for beauty. But enough talk &mdash; take a look at the case studies below!</p>
+				</div>
+			</div>			
+		</div>
 	</section>
 
 	<? foreach ($cases as $case) { ?>
@@ -24,7 +26,7 @@
 			<h4><?= a::get($case, 'company'); ?></h4>
 			<h1><?= a::get($case, 'short'); ?></h1>
 			<p>View case study</p>
-		</a>	
+		</a>		
 	</section>
 
 	<? } // end foreach ?>

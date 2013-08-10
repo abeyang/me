@@ -12,10 +12,10 @@
 // when in Production, set to true
 c::set('inproduction', true);
 
-// by default, root is ''
+// by default, root is '/'
 if (c::get('inproduction')) 
-	 c::set('root', '');
-else c::set('root', '/me');
+	 c::set('root', '/');
+else c::set('root', '/me/');
 
 c::set('name', 'Abe Yang');
 c::set('profession', 'UX Designer');
@@ -45,6 +45,7 @@ c::set('keywords', 'Cum sociis natoque penatibus et magnis dis parturient montes
 
 // takes root into account
 function url($url = '') {
+	// if (c::get('root')=='' && $url=='') return '/';
 	return c::get('root') . $url;
 }
 

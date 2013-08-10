@@ -329,12 +329,6 @@ h4 {
 	}
 
 	.video {
-		height: 1200px;
-		
-		.at2x('../../case-study/kareo-explore/hero.png', 1146px, 693px);
-		background-position: right 600px;
-		background-repeat: no-repeat;
-	
 		a { .linkify(@orange, @gray); }
 	}
 }
@@ -440,10 +434,6 @@ section {
 		h1,p { color: @white; }
 	}
 
-	// &.description {
-	// 	height: auto;
-	// }
-
 	&.layers {
 		position: relative;
 		height: @section-height;
@@ -456,17 +446,19 @@ section {
 			.transition(right 0.5s ease-in-out); 
 
 			&.breakout { right: 10%; }
+
+			img { max-width: none; }
 		}
 	}
 
 	&.orange {
 		background-color: @orange;
-		h1,h2,h3,div,span,li,p { color: @white; }
+		h2,p,div { color: @white; }
 	}
 
 	&.blue {
 		background-color: @link;
-		h1,h2,h3,div,span,li,p { color: @white; }
+		h2,p,div { color: @white; }
 	}
 
 	&.lightgray {
@@ -477,12 +469,13 @@ section {
 
 	&.black {
 		background-color: @black;
-		h1,h2,h3,div,span,li,p { color: @gray; }
+		h2,p,div { color: @lightgray; }
 	}
 
 	img {
 		margin: @padding auto;
-		max-width: auto;
+		max-width: 100%;
+		height: auto;
 	}
 
 }
