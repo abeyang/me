@@ -10,19 +10,18 @@
 
 // When in Development mode, set to false;
 // when in Production, set to true
-c::set('inproduction', false);
+c::set('inproduction', true);
 
-// by default, root is '/'
-// set root to /this/is/my/root
-// c::set('root', '/');
+// by default, root is ''
 if (c::get('inproduction')) 
-	 c::set('root', '/');
+	 c::set('root', '');
 else c::set('root', '/me');
 
 c::set('name', 'Abe Yang');
 c::set('profession', 'UX Designer');
 c::set('location', 'Irvine, CA');
 c::set('email', 'abeyang@gmail.com');
+c::set('resume', '');
 
 // Portfolio / Case Study logic
 

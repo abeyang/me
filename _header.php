@@ -63,8 +63,8 @@ if ($index) {
 	        	</div>
 	            <ul class="nav navbar-nav col-4 pull-right">
 	              <li><a href="<?= url(); ?>">Home</a></li>
-	              <li><a href="#">Resume</a></li>
-	              <li><a href="#">Contact</a></li>
+	              <!-- <li><a href="#">Resume</a></li> -->
+	              <li><a href="mailto:<?= c::get('email'); ?>">Contact</a></li>
 	            </ul>              
 	        </div>
 	    </div>

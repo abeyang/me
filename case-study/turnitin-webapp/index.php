@@ -17,14 +17,13 @@
 	<div class="row">
 		<div class="col-4 col-offset-2">
 			<h2 >About this project</h2>
-			<p>
-				There was a great need to ...
-			</p>
+			<p>Before my time with Turnitin, they already had three products publically released: <strong>Originality Check</strong>, <strong>GradeMark</strong>, and <strong>PeerMark</strong>. However, each product had its own set of UI pieces and irregularities, even though they each of them have to do with a student's paper. The mission was laid out: <em>let's unify all three experiences</em>.</p>
+			
 		</div>
 		
 		<div class="col-4">
 			<h2>My role</h2>
-			<p>...</p>
+			<p>I was responsible for the layout, information architecture, as well as the visuals. I communicated with upper management and worked closely with the product managers, and tried to strike the balance between business decisions and user needs. </p>
 		</div>
 	</div>
 </section>
