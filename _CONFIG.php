@@ -33,8 +33,8 @@ g::set('cases', array(
 
 // <head> info
 
-c::set('description', 'Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.');
-c::set('keywords', 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam quis risus eget urna mollis ornare vel eu leo.');
+c::set('description', 'The portfolio of Abe Yang. UX/Product Designer. Contains several case studies across different industries, like education and medical billing.');
+c::set('keywords', 'UX Product Designer, Irvine, Telecommute, Gracepoint Riverside, acts2fellowship, Interaction and Visual Design, Information Architecture, Layouts');
 
 // Analytics info
 // If you need to add anything, make sure to also modify the script inside header.php

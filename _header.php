@@ -94,7 +94,7 @@ if ($index) {
 	        	</div>
 	            <ul class="nav navbar-nav col-4 pull-right">
 	              <li><a href="<?= url(); ?>">Home</a></li>
-	              <!-- <li><a id="link-resume" href="#">Resume</a></li> -->
+	              <li><a id="link-resume" href="<?= url('AbeYang-Resume2013.pdf') ?>">Resume</a></li>
 	              <li><a id="link-contact" href="mailto:<?= c::get('email'); ?>">Contact</a></li>
 	            </ul>              
 	        </div>
