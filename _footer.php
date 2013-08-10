@@ -1,3 +1,4 @@
+<script type="text/javascript" src="<?= url('/assets/js/retina.js') ?>"></script>
 <script type="text/javascript">
 
 $(document).ready(function() {
