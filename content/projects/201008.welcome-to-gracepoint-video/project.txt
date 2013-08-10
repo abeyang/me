@@ -1,9 +1,0 @@
-title: Welcome to Gracepoint
--
-date: August 2010
--
-fields: video, graphic design, animation, sfx
--
-content: 
-
-Primarily used After Effects to create the animations for this fun video.

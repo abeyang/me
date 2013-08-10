@@ -1,9 +1,0 @@
-title: TII Keynote Slides
--
-date: September 2012
--
-fields: keynote, graphic design
--
-content: 
-
-Designed and created slides for a user group conference.
