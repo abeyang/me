@@ -77,8 +77,9 @@
 // Colors
 
 @orange: #FD932E;		// Kareo orange
-@green: #249718;		// deep green
+@green: #1EC423;
 @green-tii: #54AA65;
+@yellow: #FED731;
 @red: #EE604D;			// deep red
 @red-tii: #CF3C40;
 @beige: #F3EDE0;
@@ -242,10 +243,11 @@ h4 {
 }
 
 #webapp {
-	a { .linkify(@green); }
+	// a { .linkify(@green); }
+	a { .linkify(@yellow); }
 
 	.navbar { 
-		.navify(darken(@green-tii,5), @white); 
+		.navify(darken(@yellow,10), @white); 
 
 		.navbar-brand {
 			.at2x('../../assets/img/ay-brand-white.png', 47px, 30px);
@@ -253,14 +255,14 @@ h4 {
 	}
 
 	.intro {
-		background: @green-tii; /* Old browsers */
-		background: -moz-linear-gradient(top, @green-tii 55%, @white 55%); /* FF3.6+ */
-		background: -webkit-gradient(linear, left top, left bottom, color-stop(55%,@green-tii), color-stop(55%,@white)); /* Chrome,Safari4+ */
-		background: -webkit-linear-gradient(top, @green-tii 55%,@white 55%); /* Chrome10+,Safari5.1+ */
-		background: -o-linear-gradient(top, @green-tii 55%,@white 55%); /* Opera 11.10+ */
-		background: -ms-linear-gradient(top, @green-tii 55%,@white 55%); /* IE10+ */
-		background: linear-gradient(to bottom, @green-tii 55%,@white 55%); /* W3C */
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@green-tii', endColorstr='@white',GradientType=0 ); /* IE6-9 */
+		background: @yellow; /* Old browsers */
+		background: -moz-linear-gradient(top, @yellow 55%, @white 55%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(55%,@yellow), color-stop(55%,@white)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, @yellow 55%,@white 55%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, @yellow 55%,@white 55%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, @yellow 55%,@white 55%); /* IE10+ */
+		background: linear-gradient(to bottom, @yellow 55%,@white 55%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@yellow', endColorstr='@white',GradientType=0 ); /* IE6-9 */
 	}
 }
 
@@ -333,6 +335,29 @@ h4 {
 	}
 }
 
+#websites {
+	a { .linkify(@green); }
+
+	.navbar { 
+		.navify(darken(@green,5), @white); 
+
+		.navbar-brand {
+			.at2x('../../assets/img/ay-brand-white.png', 47px, 30px);
+		}
+	}
+
+	.intro {
+		background: @green; /* Old browsers */
+		background: -moz-linear-gradient(top, @green 55%, @white 55%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(55%,@green), color-stop(55%,@white)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, @green 55%,@white 55%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, @green 55%,@white 55%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, @green 55%,@white 55%); /* IE10+ */
+		background: linear-gradient(to bottom, @green 55%,@white 55%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@green', endColorstr='@white',GradientType=0 ); /* IE6-9 */
+	}
+}
+
 // ===========================================================================================================
 //
 // COMPONENTS
@@ -399,11 +424,11 @@ section {
 	}
 
 	&.turnitin-webapp {
-		background-color: @green-tii;
+		background-color: @yellow;
 		.at2x('../../case-study/turnitin-webapp/hero.png', 619px, 506px);
 		a.cover { 
-			background-color: @green-tii; 
-			border-color: darken(@green-tii, 10);
+			background-color: @yellow; 
+			border-color: darken(@yellow, 10);
 		}
 	}
 
@@ -422,6 +447,15 @@ section {
 		a.cover { 
 			background-color: @orange; 
 			border-color: darken(@orange, 10);
+		}
+	}
+
+	&.gracepoint-website {
+		background-color: @green;
+		.at2x('../../case-study/gracepoint-website/hero.png', 1000px, 506px);
+		a.cover { 
+			background-color: @green; 
+			border-color: darken(@green, 10);
 		}
 	}
 
@@ -445,7 +479,7 @@ section {
 			top: -10px;
 			.transition(right 0.5s ease-in-out); 
 
-			&.breakout { right: 10%; }
+			&.breakout { right: 5%; }
 
 			img { max-width: none; }
 		}
@@ -458,6 +492,11 @@ section {
 
 	&.blue {
 		background-color: @link;
+		h2,p,div { color: @white; }
+	}
+
+	&.green {
+		background-color: @green;
 		h2,p,div { color: @white; }
 	}
 
