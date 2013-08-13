@@ -80,6 +80,8 @@ if ($index) {
 
 	<? endif ?>
 
+	<link rel="shortcut icon" href="<?= url('assets/img/favicon.png'); ?>">
+
 </head>
 
 <body id="<?= $id ?>">

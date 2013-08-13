@@ -10,7 +10,7 @@
 
 // When in Development mode, set to false;
 // when in Production, set to true
-c::set('inproduction', false);
+c::set('inproduction', true);
 
 // by default, root is '/'
 if (c::get('inproduction')) 
@@ -29,7 +29,7 @@ g::set('cases', array(
 	array('id'=>'webapp', 'title'=>'Webapp Design', 'subtitle'=>'Consolidating three products into one', 'short'=>'Webapp', 'company'=>'Turnitin', 'class'=>'turnitin-webapp'),
 	array('id'=>'ipad', 'title'=>'iPad Design', 'subtitle'=>'Bringing the flagship product to the iPad', 'short'=>'iPad', 'company'=>'Turnitin', 'class'=>'turnitin-ipad'),
 	array('id'=>'explore', 'title'=>'Explorations', 'subtitle'=>'Design explorations and prototypes', 'short'=>'Explore', 'company'=>'Kareo', 'class'=>'kareo-explore'),
-	array('id'=>'websites', 'title'=>'Website Design', 'subtitle'=>'A tale of two websites', 'short'=>'Websites', 'company'=>'Gracepoint', 'class'=>'gracepoint-website')
+	array('id'=>'websites', 'title'=>'Website Design', 'subtitle'=>'Striving for simplicity and elegance', 'short'=>'Website', 'company'=>'Gracepoint', 'class'=>'gracepoint-website')
 ));
 
 // <head> info

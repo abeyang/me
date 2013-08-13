@@ -15,30 +15,17 @@
 
 <section class="description container">
 	<div class="row">
-		<div class="col-4 col-offset-2">
-			<h2>About this project</h2>
-			<p>Two affiliated websites, serving two demographics (with a large overlap), but for two different purposes: one is to tell people about their venue on Sundays, and the other is to broadcasting their events throughout the week.</p>
-			
-		</div>
-		
-		<div class="col-4">
-			<h2>My role</h2>
-			<p>I did the design for both websites, and managed the development across a small group of front-end and backend developers.</p>
-		</div>
+		<h1 class="text-center">About this project</h1>
+		<p class="lead col-8 col-offset-2 text-center">Whenever I would go to a new city, I'm always frustrated by my experience whenever I look at a church website; they never seem to have what I'm looking for.</p>
+		<p class="col-4 col-offset-2">Or, even if they do have the information, it takes a while sleuthing through the myriad of pages just to find the right information.
+		</p>
+		<p class="col-4">So, with this site, I wanted to make it simple, perculate all the relevant info to the homepage, and showcase the attended audience via <strong>big</strong> photos.
+		</p>
 	</div>
 </section>
 
 <section class="lightgray">
 	<div class="container">
-		<div class="row">
-			<h1 class="text-center">Act I - Church Website</h1>
-			<p class="lead col-8 col-offset-2 text-center">Whenever I would go to a new city, I'm always frustrated by my experience whenever I look at a church website; they never seem to have what I'm looking for.</p>
-			<p class="col-4 col-offset-2">Or, even if they do have the information, it takes a while sleuthing through the myriad of pages just to find the right information.
-			</p>
-			<p class="col-4">So, with this site, I wanted to make it simple, perculate all the relevant info to the homepage, and showcase the attended audience via <strong>big</strong> photos.
-			</p>
-		</div>
-		<hr />
 		<div class="row text-center">
 			<h2 class="col-12 pad top-30">Play Responsively</h2>
 			<p class="col-6 col-offset-3">With 12% of the viewers coming to the site via their smartphones, it's absolutely critical that their experience is just as good &mdash; if not better &mdash; than that on the desktop.</p>
