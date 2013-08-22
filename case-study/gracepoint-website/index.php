@@ -9,7 +9,7 @@
 		<h1><?= $title ?></h1>
 		<p class="subtitle"><?= a::get($case, 'subtitle') ?></p>
 
-		<img src="hero.png" alt="Gracepoint websites" />
+		<img src="hero.png" alt="a2f Wordpress Theme" />
 	</div>
 </section>
 

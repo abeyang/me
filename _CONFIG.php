@@ -29,7 +29,8 @@ g::set('cases', array(
 	array('id'=>'webapp', 'title'=>'Webapp Design', 'subtitle'=>'Consolidating three products into one', 'short'=>'Webapp', 'company'=>'Turnitin', 'class'=>'turnitin-webapp'),
 	array('id'=>'ipad', 'title'=>'iPad Design', 'subtitle'=>'Bringing the flagship product to the iPad', 'short'=>'iPad', 'company'=>'Turnitin', 'class'=>'turnitin-ipad'),
 	array('id'=>'explore', 'title'=>'Explorations', 'subtitle'=>'Design explorations and prototypes', 'short'=>'Explore', 'company'=>'Kareo', 'class'=>'kareo-explore'),
-	array('id'=>'websites', 'title'=>'Website Design', 'subtitle'=>'Striving for simplicity and elegance', 'short'=>'Website', 'company'=>'Gracepoint', 'class'=>'gracepoint-website')
+	array('id'=>'websites', 'title'=>'Website Design', 'subtitle'=>'Striving for simplicity and elegance', 'short'=>'Website', 'company'=>'Gracepoint', 'class'=>'gracepoint-website'),
+	array('id'=>'theme', 'title'=>'Wordpress Theme', 'subtitle'=>'Beautiful and functional', 'short'=>'Theme', 'company'=>'a2f', 'class'=>'a2f-theme')
 ));
 
 // <head> info

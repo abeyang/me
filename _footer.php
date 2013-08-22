@@ -1,3 +1,23 @@
+<?php
+
+// first $index has to be 1, not 0
+if ($index) {
+	// logic for prev/next buttons
+	$lastindex = sizeof($cases)-1;
+	$currentindex = $index-1;
+	$nextindex = ($currentindex==$lastindex) ? 0 : $index;
+	$previndex = ($currentindex) ? $currentindex-1 : $lastindex;
+
+	// todo: show buttons
+}
+
+// $id of button to make, $class = {left, right}
+function makeButton($id, $class) {
+	// todo: fill in html here
+}
+
+?> 
+
 <script type="text/javascript" src="<?= url('assets/js/retina.js') ?>"></script>
 <script type="text/javascript">
 
