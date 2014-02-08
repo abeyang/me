@@ -77,6 +77,7 @@
 // Colors
 
 @orange: #FD932E;		// Kareo orange
+@lightorange: #FF9F3E;	// Glencoe orange
 @green: #1EC423;
 @green-tii: #54AA65;
 @yellow: #FED731;
@@ -90,7 +91,7 @@
 @blue-a2f: #164A66;
 @link: @blue-tii;			// blue
 
-@black: #222;
+@black: #111;
 @darkestgray: #333;
 @darkergray: #555;
 @darkgray: #777;
@@ -245,7 +246,6 @@ h4 {
 }
 
 #webapp {
-	// a { .linkify(@green); }
 	a { .linkify(@yellow); }
 
 	.navbar { 
@@ -385,6 +385,29 @@ h4 {
 	.darkblue a { .linkify(@yellow-a2f, @yellow-a2f); }
 }
 
+#wip {
+	a { .linkify(@lightorange); }
+
+	.navbar { 
+		.navify(darken(@lightorange,5), @white); 
+
+		.navbar-brand {
+			.at2x('../../assets/img/ay-brand-white.png', 47px, 30px);
+		}
+	}
+
+	.intro {
+		background: @lightorange; /* Old browsers */
+		background: -moz-linear-gradient(top, @lightorange 55%, @white 55%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(55%,@lightorange), color-stop(55%,@white)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, @lightorange 55%,@white 55%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, @lightorange 55%,@white 55%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, @lightorange 55%,@white 55%); /* IE10+ */
+		background: linear-gradient(to bottom, @lightorange 55%,@white 55%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@lightorange', endColorstr='@white',GradientType=0 ); /* IE6-9 */
+	}
+}
+
 // ===========================================================================================================
 //
 // COMPONENTS
@@ -495,6 +518,15 @@ section {
 		}
 	}
 
+	&.glencoe-wip {
+		background-color: @white;
+		.at2x('../../case-study/glencoe-wip/dv-1.jpg', 980px, 680px);
+		a.cover { 
+			background-color: @lightorange; 
+			border-color: darken(@white, 10);
+		}
+	}
+
 	&.thin {
 		height: @section-height-thin;
 	}
@@ -573,6 +605,11 @@ section {
 		border-bottom: 1px solid @lightestgray;
 	}
 
+	&.illustratorgray {
+		background-color: #5D5D5D;
+		h2,p,div { color: @white; }
+	}
+
 	&.black {
 		background-color: @black;
 		h2,p,div { color: @lightgray; }
@@ -582,6 +619,10 @@ section {
 		margin: @padding auto;
 		max-width: 100%;
 		height: auto;
+
+		&.frame {
+			border: 3px solid @lightergray;
+		}
 	}
 
 }
