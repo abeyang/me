@@ -10,7 +10,7 @@
 
 // When in Development mode, set to false;
 // when in Production, set to true
-c::set('inproduction', true);
+c::set('inproduction', false);
 
 // by default, root is '/'
 if (c::get('inproduction')) 

@@ -7,10 +7,15 @@
 	<section id="hello">
 		<div class="container">
 			<div class="row">
-				<div class="col-2 col-offset-3">
-					<img id="logo" src="assets/img/ay-brand-large.png" alt="Abe Yang" />
+				<div class="col-2 col-offset-2">
+					
+					<!-- <img id="logo" src="assets/img/ay-brand-large.png" alt="Abe Yang" /> -->
 				</div>
 				<div class="col-4">
+					<div id="avatar">
+						<img src="assets/img/avatar2014.jpg" alt="Abe Yang" />	
+					</div>
+					
 					<h1>Hello!</h1>
 					<p class="lead">My name is <?= c::get('name') ?>, and I'm a <?= c::get('profession') ?> living near <?= c::get('location') ?>. </p>
 					<p>I design for <a href="case-study/kareo-explore">interactions across screens</a>, whether it's for the <a href="case-study/turnitin-webapp">web</a> or for <a href="case-study/turnitin-ipad">iOS devices</a>. I design for simplicity, for ease-of-use, and for beauty. But enough talk &mdash; take a look at the case studies below!</p>
